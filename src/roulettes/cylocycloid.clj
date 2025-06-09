@@ -58,7 +58,7 @@
      :size [1000 1000])))
 
 (comment 
-  (let [r 50 R (* (abs r) (/ 2 1)) d 1] 
+  (let [r 50 R (* (abs r) (/ 2 1)) d 0.8] 
     (sketch-cyclocycloid R r (* d r) 0.1))
   (sketch-cyclocycloid 180 60 60 0.1)
   (q/defsketch example
