@@ -9,20 +9,24 @@
      (- (* Rr (math/sin t))
         (* d (math/sin (* qr t))))]))
 
+;2PkQ = 2Pm ; 2Pk = 2Pm/Q 
+
 (defn draw-cyclocycloid 
   [R r d step]
   (q/no-loop)
   (q/translate (/ (q/width) 2) (/ (q/height) 2))
   (q/color-mode :hsb 360 1 1 1)  
   ;; TODO: Figure out the period
-  (dotimes [i (inc (/ (* 2 (+ (numerator (clojure.lang.Numbers/toRatio (/ R (abs r))))
-                             (denominator (clojure.lang.Numbers/toRatio (/ R (abs r))))))
+  (dotimes [i (inc (/ (* 3 (+ (numerator (clojure.lang.Numbers/toRatio (/ R (abs r))))
+                              (denominator (clojure.lang.Numbers/toRatio (/ R (abs r))))))
                      step))] 
     (let [t (* i step)
           t' (+ t step)]
-      (q/stroke (mod (q/frame-count) 360) 0.5 0.5 1)
+      ;(q/stroke (mod i 360) 0.5 0.5 1)
       (let [[x   y] (cyclocycloid R r d t)
             [x' y'] (cyclocycloid R r d t')]
+        (q/stroke (+ 180 (math/to-degrees (math/atan2 y' x')))
+                  0.5 0.5 1)
         (q/line x y x' y')))))
 
 (defn setup []
@@ -58,13 +62,13 @@
      :size [1000 1000])))
 
 (comment 
-  (let [r 50 R (* (abs r) (/ 2 1)) d 0.8] 
+  (let [r 50 R (* (abs r) (/ 300 100)) d 0.8] 
     (sketch-cyclocycloid R r (* d r) 0.1))
   (sketch-cyclocycloid 180 60 60 0.1)
   (q/defsketch example
    :title "Spirograph"
    :settings #(q/smooth 2)
    :setup setup
-   :draw #(draw-cyclocycloid 180 90 90 0.1)
+   :draw #(draw-cyclocycloid 189 93 90 0.1)
    :size [800 800]))
 
