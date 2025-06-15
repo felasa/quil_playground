@@ -1,2 +1,3 @@
 {:paths ["src"]
- :deps  {quil/quil {:mvn/version "4.3.1563"}}}
+ :deps  {quil/quil {:mvn/version "4.3.1563"}
+         org.clojure/data.json {:mvn/version "2.5.0"}}}

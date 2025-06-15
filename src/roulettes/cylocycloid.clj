@@ -21,13 +21,13 @@
                               (denominator (clojure.lang.Numbers/toRatio (/ R (abs r))))))
                      step))] 
     (let [t (* i step)
-          t' (+ t step)]
+          t' (+ t step)
+          [x   y] (cyclocycloid R r d t)
+          [x' y'] (cyclocycloid R r d t')]
       ;(q/stroke (mod i 360) 0.5 0.5 1)
-      (let [[x   y] (cyclocycloid R r d t)
-            [x' y'] (cyclocycloid R r d t')]
-        (q/stroke (+ 180 (math/to-degrees (math/atan2 y' x')))
-                  0.5 0.5 1)
-        (q/line x y x' y')))))
+      (q/stroke (mod (math/to-degrees (math/atan2 y' x')) 360)
+                1 0.5 1)
+      (q/line x y x' y'))))
 
 (defn setup []
   (q/frame-rate 30)
@@ -62,7 +62,7 @@
      :size [1000 1000])))
 
 (comment 
-  (let [r 50 R (* (abs r) (/ 300 100)) d 0.8] 
+  (let [r 50 R (* (abs r) (/ 301 105)) d 0.8] 
     (sketch-cyclocycloid R r (* d r) 0.1))
   (sketch-cyclocycloid 180 60 60 0.1)
   (q/defsketch example
