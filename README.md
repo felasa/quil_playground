@@ -10,3 +10,4 @@ Playing with quil and generative art.
 
 ![Spyrograph](out/roulette_4dd7e.png)
 
+:)
