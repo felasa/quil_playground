@@ -77,7 +77,7 @@
 
 (comment 
   (q/defsketch example
-    :title "Flow Fields"
+    :title "Rain"
     :display 1
     :settings #(q/smooth 32)
     :setup setup
@@ -86,3 +86,8 @@
     :size [1024 800]
     ;:features [:exit-on-close]))
     :renderer :java2d))
+
+(comment 
+  (quil.applet/with-applet
+    generative.raindrops/example 
+    (q/save (str "out/raindrops_" (subs (str (random-uuid)) 0 5) ".png")))) ;

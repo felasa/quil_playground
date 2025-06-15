@@ -72,3 +72,7 @@
    :draw #(draw-cyclocycloid 189 93 90 0.1)
    :size [800 800]))
 
+(comment 
+  (quil.applet/with-applet
+    roulettes.cylocycloid/example 
+    (q/save (str "out/roulette_" (subs (str (random-uuid)) 0 5) ".png")))) ;

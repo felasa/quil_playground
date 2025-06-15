@@ -88,7 +88,6 @@
     :features [:resizable]
     :renderer :java2d))
 
-
 (comment 
   (quil.applet/with-applet generative.circledrops/example 
     (q/save (str "out/circles_" (subs (str (random-uuid)) 0 5) ".png")))) ;
