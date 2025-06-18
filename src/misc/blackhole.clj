@@ -1,5 +1,4 @@
 ;; Credit: @XoDev https://x.com/XorDev/status/1897042877626421642
-
 (ns misc.blackhole
   (:require [quil.core :as q]
             [clojure.math :as math]))
@@ -19,9 +18,17 @@
 
 (defn draw-bh
   [W H]
+  (q/color-mode :hsb 360 1 1 1)
   (doseq [x (range W) y (range H)]
-    (let [I (* 255 (bh-intensity W H x y))]
-      (q/set-pixel (- H y) x (q/color I))))) 
+    (let [
+          x' (- x (/ W 2)) y' (- y (/ H 2))
+          r (/ (math/sqrt (+ (math/pow x' 2) (math/pow y' 2)))
+               (math/sqrt (+ (math/pow (/ H 2) 2) (math/pow (/ W 2) 2))))
+          i (bh-intensity W H x y)
+          I (* 255 i)]
+      (q/set-pixel (- H y) x 
+                   ;(q/color I) 
+                   (q/color (+ 180 (math/to-degrees (math/atan2 y' x'))) 1 (* i i)))))) 
   ;(q/save "out/horizon.png"))
 
 (def W 800)
@@ -42,4 +49,4 @@
 (comment 
   (quil.applet/with-applet
     misc.blackhole/bh 
-    (q/save "out/horizon.png"))) ;
+    (q/save "out/horizon_hsv_hard.png"))) ;
