@@ -23,10 +23,11 @@
 ;; may be more efficient? no need anyway
 ;; (+ (square (- x x')) (square (- y y'))) <= (square (+ r R))
 (defn draw [W H tries ini-r anneal-r]
+  (q/ellipse-mode :radius)
   (let [pallete (mapv hex-to-rgb ((rand-nth combos) "hex"))]
     (loop [drawn [] remaining tries R ini-r]
       (cond 
-        (< R 5) nil
+        (<= R 1) nil
         (<= remaining 0) (recur drawn tries (* R anneal-r))
         :else 
         (let [buff (+ R 10)
@@ -34,19 +35,18 @@
               color (rand-nth pallete)]
           (if (not-any? (partial collides? [x y R]) drawn)
             (do
-              (apply q/stroke color)
-              (apply q/fill color)
-              (q/ellipse x y (* R 1.9) (* R 1.9))
+              (apply q/stroke (conj color 128))
+              (apply q/fill (conj color 128))
+              (q/ellipse x y (* R 0.99) (* R 0.99))
               (recur (conj drawn [x y R]) (dec remaining) R))
             (recur drawn (dec remaining) R)))))))
                     
-; [--x--][--y--]
 (defn setup []
+  (q/no-loop)
   ;(q/frame-rate 8)
   ;(q/background 50)
   (q/background 200 0)
-  (q/stroke-weight 1)
-  (q/no-loop))
+  (q/stroke-weight 1))
 
 (comment 
   (q/defsketch example
@@ -54,7 +54,7 @@
     :display 1
     :settings #(q/smooth)
     :setup setup
-    :draw #(dotimes [n 1] (draw 900 900 20000 100 0.5))
+    :draw #(dotimes [n 3] (draw 900 900 20000 100 0.5))
     :size [900 900]
     :features [:resizable]
     :renderer :java2d))

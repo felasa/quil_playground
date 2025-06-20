@@ -12,6 +12,6 @@ Playing with quil and generative art.
 
 ![Blackhole](out/horizon_hsv_hard.png)
 
-![Circlepacking](out/circles_packs_d491f.png)
+![Circlepacking](out/circles_packs_2359b.png)
 
 :)
