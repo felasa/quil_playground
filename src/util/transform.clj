@@ -92,7 +92,7 @@
    params map with keys :dx and :dy for traslation, :scale for scaling, :angle (in radians) for 
    rotations"
   [draw-fn params]
-  (let [{dx :dx dy :dy angle :angle scale :scale} params]
+  (let [{:keys [dx dy angle scale]} params]
     (q/push-matrix)
     (when dx
       (q/translate  dx 0))
