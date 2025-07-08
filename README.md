@@ -14,4 +14,6 @@ Playing with quil and generative art.
 
 ![Circlepacking](out/circles_packs_15eeb.png)
 
+![Animated Flowfields](out/animation_.gif)
+
 :)
