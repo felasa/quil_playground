@@ -1,0 +1,2750 @@
+{:colors
+ ({:name "Hermosa Pink",
+   :cmyk [0 30 6 0],
+   :combinations [176 227 273],
+   :id_swatch 1,
+   :id_color 1,
+   :rgb [249 192 205],
+   :hex "#f9c0cd",
+   :hsb [345 23 98]}
+  {:name "Corinthian Pink",
+   :cmyk [0 35 15 0],
+   :combinations [27 43 87 97 128 169 174 206 246 254 264 342],
+   :id_swatch 1,
+   :id_color 2,
+   :rgb [248 181 186],
+   :hex "#f8b5ba",
+   :hsb [355 27 97]}
+  {:name "Cameo Pink",
+   :cmyk [10 32 19 0],
+   :combinations [101 105 116 120 165 231],
+   :id_swatch 1,
+   :id_color 3,
+   :rgb [225 180 182],
+   :hex "#e1b4b6",
+   :hsb [356 20 88]}
+  {:name "Fawn",
+   :cmyk [18 31 30 0],
+   :combinations [18 125 308],
+   :id_swatch 1,
+   :id_color 4,
+   :rgb [209 176 166],
+   :hex "#d1b0a6",
+   :hsb [14 21 82]}
+  {:name "Light Brown Drab",
+   :cmyk [8 30 20 25],
+   :combinations [35 68 185 191 223 239 244 268 285 321],
+   :id_swatch 1,
+   :id_color 5,
+   :rgb [181 147 146],
+   :hex "#b59392",
+   :hsb [2 19 71]}
+  {:name "Coral Red",
+   :cmyk [0 55 40 0],
+   :combinations [92 123 320 332],
+   :id_swatch 1,
+   :id_color 6,
+   :rgb [245 142 132],
+   :hex "#f58e84",
+   :hsb [5 46 96]}
+  {:name "Fresh Color",
+   :cmyk [0 53 45 0],
+   :combinations [240],
+   :id_swatch 1,
+   :id_color 7,
+   :rgb [246 145 126],
+   :hex "#f6917e",
+   :hsb [9 49 96]}
+  {:name "Grenadine Pink",
+   :cmyk [0 62 58 0],
+   :combinations [6 21 112 166 193 201 230 300 315 341],
+   :id_swatch 1,
+   :id_color 8,
+   :rgb [244 128 103],
+   :hex "#f48067",
+   :hsb [11 58 96]}
+  {:name "Eosine Pink",
+   :cmyk [0 63 23 0],
+   :combinations
+   [34 59 90 108 134 153 197 242 248 276 287 314 327 336],
+   :id_swatch 1,
+   :id_color 9,
+   :rgb [243 128 148],
+   :hex "#f38094",
+   :hsb [349 47 95]}
+  {:name "Spinel Red",
+   :cmyk [0 70 21 0],
+   :combinations [14 147 165 184 195 224 277],
+   :id_swatch 1,
+   :id_color 10,
+   :rgb [242 114 145],
+   :hex "#f27291",
+   :hsb [345 53 95]}
+  {:name "Old Rose",
+   :cmyk [15 70 40 0],
+   :combinations [55 162 260 265],
+   :id_swatch 1,
+   :id_color 11,
+   :rgb [212 109 122],
+   :hex "#d46d7a",
+   :hsb [351 49 83]}
+  {:name "Eugenia Red | A",
+   :cmyk [7 76 60 0],
+   :combinations [284],
+   :id_swatch 1,
+   :id_color 12,
+   :rgb [226 98 94],
+   :hex "#e2625e",
+   :hsb [2 58 89]}
+  {:name "Eugenia Red | B",
+   :cmyk [0 80 50 10],
+   :combinations [17 77 252 262 270 280 282 325],
+   :id_swatch 1,
+   :id_color 13,
+   :rgb [218 82 93],
+   :hex "#da525d",
+   :hsb [354 62 85]}
+  {:name "Raw Sienna",
+   :cmyk [18 58 100 12],
+   :combinations
+   [3
+    13
+    33
+    70
+    86
+    130
+    131
+    182
+    243
+    247
+    252
+    255
+    268
+    269
+    279
+    293
+    298
+    319
+    327],
+   :id_swatch 1,
+   :id_color 14,
+   :rgb [187 113 37],
+   :hex "#bb7125",
+   :hsb [30 80 73]}
+  {:name "Vinaceous Tawny",
+   :cmyk [17 72 100 6],
+   :combinations [40 85 244],
+   :id_swatch 1,
+   :id_color 15,
+   :rgb [197 98 39],
+   :hex "#c56227",
+   :hsb [22 80 77]}
+  {:name "Jasper Red",
+   :cmyk [2 83 100 0],
+   :combinations [155 194 216 219],
+   :id_swatch 1,
+   :id_color 16,
+   :rgb [235 83 36],
+   :hex "#eb5324",
+   :hsb [14 85 92]}
+  {:name "Spectrum Red",
+   :cmyk [5 100 100 0],
+   :combinations [257 266 301 322],
+   :id_swatch 1,
+   :id_color 17,
+   :rgb [227 31 38],
+   :hex "#e31f26",
+   :hsb [357 86 89]}
+  {:name "Red Orange",
+   :cmyk [9 90 100 0],
+   :combinations [31 164 179 241 264],
+   :id_swatch 1,
+   :id_color 18,
+   :rgb [221 65 39],
+   :hex "#dd4127",
+   :hsb [9 82 87]}
+  {:name "Etruscan Red",
+   :cmyk [16 80 74 6],
+   :combinations [25 47 97 137 152 185 275],
+   :id_swatch 1,
+   :id_color 19,
+   :rgb [197 83 71],
+   :hex "#c55347",
+   :hsb [6 64 77]}
+  {:name "Burnt Sienna",
+   :cmyk [22 76 100 15],
+   :combinations [198 242 263 285 286 297 312 333 343],
+   :id_swatch 1,
+   :id_color 20,
+   :rgb [174 82 36],
+   :hex "#ae5224",
+   :hsb [20 79 68]}
+  {:name "Ochre Red",
+   :cmyk [18 73 63 20],
+   :combinations [199 283],
+   :id_swatch 1,
+   :id_color 21,
+   :rgb [171 84 77],
+   :hex "#ab544d",
+   :hsb [4 55 67]}
+  {:name "Scarlet",
+   :cmyk [10 95 72 7],
+   :combinations [136 308 332],
+   :id_swatch 1,
+   :id_color 22,
+   :rgb [204 46 67],
+   :hex "#cc2e43",
+   :hsb [351 77 80]}
+  {:name "Carmine",
+   :cmyk [0 100 75 16],
+   :combinations [39 117 122 154 225 232 307 313],
+   :id_swatch 1,
+   :id_color 23,
+   :rgb [204 18 54],
+   :hex "#cc1236",
+   :hsb [347 91 80]}
+  {:name "Indian Lake",
+   :cmyk [12 89 35 9],
+   :combinations [299 331],
+   :id_swatch 1,
+   :id_color 24,
+   :rgb [197 60 105],
+   :hex "#c53c69",
+   :hsb [339 70 77]}
+  {:name "Rosolanc Purple",
+   :cmyk [30 90 33 0],
+   :combinations [48 144 170 204 277 346],
+   :id_swatch 1,
+   :id_color 25,
+   :rgb [183 64 116],
+   :hex "#b74074",
+   :hsb [333 65 72]}
+  {:name "Pomegranite Purple",
+   :cmyk [23 100 50 6],
+   :combinations [220 271],
+   :id_swatch 1,
+   :id_color 26,
+   :rgb [183 31 88],
+   :hex "#b71f58",
+   :hsb [337 83 72]}
+  {:name "Hydrangea Red",
+   :cmyk [38 90 70 0],
+   :combinations [142],
+   :id_swatch 1,
+   :id_color 27,
+   :rgb [169 66 81],
+   :hex "#a94251",
+   :hsb [350 61 66]}
+  {:name "Brick Red",
+   :cmyk [22 84 100 18],
+   :combinations [37 108 246 322 328],
+   :id_swatch 1,
+   :id_color 28,
+   :rgb [168 66 34],
+   :hex "#a84222",
+   :hsb [14 80 66]}
+  {:name "Carmine Red",
+   :cmyk [25 95 80 16],
+   :combinations [35 51 104 130 181 200 221 228 233 237 245 338],
+   :id_swatch 1,
+   :id_color 29,
+   :rgb [166 44 55],
+   :hex "#a62c37",
+   :hsb [354 73 65]}
+  {:name "Pompeian Red",
+   :cmyk [18 97 74 19],
+   :combinations [30 71 120 212 311 324],
+   :id_swatch 1,
+   :id_color 30,
+   :rgb [171 35 57],
+   :hex "#ab2339",
+   :hsb [349 80 67]}
+  {:name "Red",
+   :cmyk [30 100 70 10],
+   :combinations [251 261],
+   :id_swatch 1,
+   :id_color 31,
+   :rgb [167 34 68],
+   :hex "#a72244",
+   :hsb [344 80 65]}
+  {:name "Brown",
+   :cmyk [35 74 90 35],
+   :combinations [110 121 145 161],
+   :id_swatch 1,
+   :id_color 32,
+   :rgb [124 66 37],
+   :hex "#7c4225",
+   :hsb [20 70 49]}
+  {:name "Hay's Russet",
+   :cmyk [37 85 87 35],
+   :combinations [58 82 95 152 186 231 249 304 314 336 345],
+   :id_swatch 1,
+   :id_color 33,
+   :rgb [121 51 38],
+   :hex "#793326",
+   :hsb [9 69 47]}
+  {:name "Vandyke Red",
+   :cmyk [32 95 95 33],
+   :combinations [16 133 147 316 335],
+   :id_swatch 1,
+   :id_color 34,
+   :rgb [130 35 30],
+   :hex "#82231e",
+   :hsb [3 77 51]}
+  {:name "Pansy Purple",
+   :cmyk [34 100 60 34],
+   :combinations [157 273],
+   :id_swatch 1,
+   :id_color 35,
+   :rgb [126 19 58],
+   :hex "#7e133a",
+   :hsb [337 85 49]}
+  {:name "Pale Burnt Lake",
+   :cmyk [25 90 80 40],
+   :combinations [124 171 177 205 217 258 269 283],
+   :id_swatch 1,
+   :id_color 36,
+   :rgb [128 39 38],
+   :hex "#802726",
+   :hsb [1 70 50]}
+  {:name "Violet Red",
+   :cmyk [75 100 50 5],
+   :combinations [9],
+   :id_swatch 1,
+   :id_color 37,
+   :rgb [99 45 94],
+   :hex "#632d5e",
+   :hsb [305 55 39]}
+  {:name "Vistoris Lake",
+   :cmyk [40 71 55 40],
+   :combinations [63 91 165 226 290 337],
+   :id_swatch 1,
+   :id_color 38,
+   :rgb [110 65 69],
+   :hex "#6e4145",
+   :hsb [354 41 43]}
+  {:name "Sulpher Yellow",
+   :cmyk [4 4 28 0],
+   :combinations
+   [52
+    72
+    80
+    104
+    132
+    135
+    151
+    208
+    246
+    254
+    270
+    294
+    296
+    310
+    315
+    320
+    321
+    326],
+   :id_swatch 2,
+   :id_color 39,
+   :rgb [245 235 193],
+   :hex "#f5ebc1",
+   :hsb [48 21 96]}
+  {:name "Pale Lemon Yellow",
+   :cmyk [0 4 38 0],
+   :combinations
+   [3
+    31
+    60
+    76
+    99
+    109
+    111
+    169
+    185
+    195
+    203
+    228
+    241
+    261
+    272
+    281
+    290
+    292
+    336],
+   :id_swatch 2,
+   :id_color 40,
+   :rgb [255 239 174],
+   :hex "#ffefae",
+   :hsb [48 32 100]}
+  {:name "Naples Yellow",
+   :cmyk [2 7 44 0],
+   :combinations [14 115 166 193 303 325],
+   :id_swatch 2,
+   :id_color 41,
+   :rgb [251 230 160],
+   :hex "#fbe6a0",
+   :hsb [46 36 98]}
+  {:name "Ivory Buff",
+   :cmyk [8 15 40 0],
+   :combinations
+   [11 50 94 102 126 178 184 190 209 214 235 243 262 266 301 343],
+   :id_swatch 2,
+   :id_color 42,
+   :rgb [234 210 162],
+   :hex "#ead2a2",
+   :hsb [40 31 92]}
+  {:name "Seashell Pink",
+   :cmyk [0 19 23 0],
+   :combinations [45 84 88 113 150 176 194 276 334],
+   :id_swatch 2,
+   :id_color 43,
+   :rgb [253 212 189],
+   :hex "#fdd4bd",
+   :hsb [22 25 99]}
+  {:name "Light Pinkish Cinnamon",
+   :cmyk [0 25 40 0],
+   :combinations [317],
+   :id_swatch 2,
+   :id_color 44,
+   :rgb [252 199 155],
+   :hex "#fcc79b",
+   :hsb [27 38 99]}
+  {:name "Pinkish Cinnamon",
+   :cmyk [5 32 53 0],
+   :combinations [78 161 175 232 258 263 292 305 310],
+   :id_swatch 2,
+   :id_color 45,
+   :rgb [238 180 129],
+   :hex "#eeb481",
+   :hsb [28 46 93]}
+  {:name "Cinnamon Buff",
+   :cmyk [0 25 57 0],
+   :combinations [23 127 137 180 210 234 246 323 344],
+   :id_swatch 2,
+   :id_color 46,
+   :rgb [253 197 125],
+   :hex "#fdc57d",
+   :hsb [34 51 99]}
+  {:name "Cream Yellow",
+   :cmyk [0 28 68 0],
+   :combinations
+   [122 192 215 226 267 278 294 295 300 302 304 311 329 342],
+   :id_swatch 2,
+   :id_color 47,
+   :rgb [253 190 104],
+   :hex "#fdbe68",
+   :hsb [35 59 99]}
+  {:name "Golden Yellow",
+   :cmyk [2 42 74 0],
+   :combinations [26 81 132 138 140 179 206 229 309 315],
+   :id_swatch 2,
+   :id_color 48,
+   :rgb [243 162 87],
+   :hex "#f3a257",
+   :hsb [29 64 95]}
+  {:name "Vinaceous Cinnamon",
+   :cmyk [4 40 42 0],
+   :combinations [203 205 213 256 260 279 299],
+   :id_swatch 2,
+   :id_color 49,
+   :rgb [238 167 140],
+   :hex "#eea78c",
+   :hsb [16 41 93]}
+  {:name "Ochraceous Salmon",
+   :cmyk [15 38 55 0],
+   :combinations [32 71 121 186 217 220 223 238 296 339],
+   :id_swatch 2,
+   :id_color 50,
+   :rgb [216 163 123],
+   :hex "#d8a37b",
+   :hsb [26 43 85]}
+  {:name "Isabella Color",
+   :cmyk [15 28 60 10],
+   :combinations [4 12 241 292],
+   :id_swatch 2,
+   :id_color 51,
+   :rgb [198 165 110],
+   :hex "#c6a56e",
+   :hsb [37 44 78]}
+  {:name "Maple",
+   :cmyk [5 26 56 20],
+   :combinations [282],
+   :id_swatch 2,
+   :id_color 52,
+   :rgb [197 159 107],
+   :hex "#c59f6b",
+   :hsb [35 46 77]}
+  {:name "Olive Buff",
+   :cmyk [16 6 42 12],
+   :combinations [83 175 200 330 348],
+   :id_swatch 2,
+   :id_color 53,
+   :rgb [193 196 148],
+   :hex "#c1c494",
+   :hsb [64 24 77]}
+  {:name "Ecru",
+   :cmyk [20 25 40 6],
+   :combinations [167 249 275 279 292 302 317 327],
+   :id_swatch 2,
+   :id_color 54,
+   :rgb [193 174 146],
+   :hex "#c1ae92",
+   :hsb [36 24 76]}
+  {:name "Yellow",
+   :cmyk [0 0 100 0],
+   :combinations [22 62 68 154 240 251 295 313],
+   :id_swatch 2,
+   :id_color 55,
+   :rgb [255 242 0],
+   :hex "#fff200",
+   :hsb [57 100 100]}
+  {:name "Lemon Yellow",
+   :cmyk [5 0 85 0],
+   :combinations
+   [45 123 138 158 168 173 189 210 253 259 289 298 306 317 333],
+   :id_swatch 2,
+   :id_color 56,
+   :rgb [249 237 67],
+   :hex "#f9ed43",
+   :hsb [56 73 98]}
+  {:name "Apricot Yellow",
+   :cmyk [0 10 100 0],
+   :combinations [107 129 163 198 213 247 265 284 305 319],
+   :id_swatch 2,
+   :id_color 57,
+   :rgb [255 221 0],
+   :hex "#ffdd00",
+   :hsb [52 100 100]}
+  {:name "Pyrite Yellow",
+   :cmyk [23 25 80 0],
+   :combinations [239 250 255 287],
+   :id_swatch 2,
+   :id_color 58,
+   :rgb [203 179 86],
+   :hex "#cbb356",
+   :hsb [48 58 80]}
+  {:name "Olive Ocher",
+   :cmyk [18 26 90 0],
+   :combinations [66 148 149 156 157 249 278],
+   :id_swatch 2,
+   :id_color 59,
+   :rgb [214 180 62],
+   :hex "#d6b43e",
+   :hsb [46 71 84]}
+  {:name "Yellow Ocher",
+   :cmyk [12 28 88 0],
+   :combinations [42 96 118 124 126 191 222 325],
+   :id_swatch 2,
+   :id_color 60,
+   :rgb [226 181 63],
+   :hex "#e2b53f",
+   :hsb [43 72 89]}
+  {:name "Orange Yellow",
+   :cmyk [0 33 100 0],
+   :combinations [114 148 153 164 170 257 286 338],
+   :id_swatch 2,
+   :id_color 61,
+   :rgb [252 179 21],
+   :hex "#fcb315",
+   :hsb [41 92 99]}
+  {:name "Yellow Orange",
+   :cmyk [0 45 100 0],
+   :combinations [2 53 89 151 171 209 222 235 267 288 297 312 319 335],
+   :id_swatch 2,
+   :id_color 62,
+   :rgb [249 157 28],
+   :hex "#f99d1c",
+   :hsb [35 89 98]}
+  {:name "Apricot Orange",
+   :cmyk [0 55 75 0],
+   :combinations [211 253 309 328],
+   :id_swatch 2,
+   :id_color 63,
+   :rgb [246 140 80],
+   :hex "#f68c50",
+   :hsb [22 67 96]}
+  {:name "Orange",
+   :cmyk [0 68 100 0],
+   :combinations [7 46 141 144 149 256 272],
+   :id_swatch 2,
+   :id_color 64,
+   :rgb [244 115 33],
+   :hex "#f47321",
+   :hsb [23 86 96]}
+  {:name "Peach Red",
+   :cmyk [0 80 90 0],
+   :combinations [115 250 274 285 298 303 326 340],
+   :id_swatch 2,
+   :id_color 65,
+   :rgb [241 90 49],
+   :hex "#f15a31",
+   :hsb [13 80 95]}
+  {:name "English Red",
+   :cmyk [13 73 100 0],
+   :combinations [1 131 190 308 339],
+   :id_swatch 2,
+   :id_color 66,
+   :rgb [217 102 41],
+   :hex "#d96629",
+   :hsb [21 81 85]}
+  {:name "Cinnamon Rufous",
+   :cmyk [20 60 82 5],
+   :combinations [8 10 103 158 172 204 206],
+   :id_swatch 2,
+   :id_color 67,
+   :rgb [194 117 67],
+   :hex "#c27543",
+   :hsb [24 65 76]}
+  {:name "Orange Rufous",
+   :cmyk [18 65 100 8],
+   :combinations [91 102 222],
+   :id_swatch 2,
+   :id_color 68,
+   :rgb [193 107 39],
+   :hex "#c16b27",
+   :hsb [26 80 76]}
+  {:name "Sulphine Yellow",
+   :cmyk [24 32 100 4],
+   :combinations [36 65 142 160 252],
+   :id_swatch 2,
+   :id_color 69,
+   :rgb [192 159 44],
+   :hex "#c09f2c",
+   :hsb [46 77 75]}
+  {:name "Khaki",
+   :cmyk [24 45 100 6],
+   :combinations [129 146 159 236 248],
+   :id_swatch 2,
+   :id_color 70,
+   :rgb [188 137 43],
+   :hex "#bc892b",
+   :hsb [39 77 74]}
+  {:name "Citron Yellow",
+   :cmyk [35 17 95 0],
+   :combinations [40 87 145 150 153 196 305 323],
+   :id_swatch 2,
+   :id_color 71,
+   :rgb [178 183 62],
+   :hex "#b2b73e",
+   :hsb [62 66 72]}
+  {:name "Citrine",
+   :cmyk [36 32 100 0],
+   :combinations [59 93 132 133 262],
+   :id_swatch 2,
+   :id_color 72,
+   :rgb [176 159 54],
+   :hex "#b09f36",
+   :hsb [51 69 69]}
+  {:name "Buffy Citrine",
+   :cmyk [42 40 82 8],
+   :combinations [100 177 233],
+   :id_swatch 2,
+   :id_color 73,
+   :rgb [150 135 76],
+   :hex "#96874c",
+   :hsb [48 49 59]}
+  {:name "Dark Citrine",
+   :cmyk [38 34 67 20],
+   :combinations [10 41 274 304],
+   :id_swatch 2,
+   :id_color 74,
+   :rgb [139 131 91],
+   :hex "#8b835b",
+   :hsb [50 35 55]}
+  {:name "Light Grayish Olive",
+   :cmyk [43 36 62 19],
+   :combinations [107 184],
+   :id_swatch 2,
+   :id_color 75,
+   :rgb [132 128 97],
+   :hex "#848061",
+   :hsb [53 27 52]}
+  {:name "Krongbergs Green",
+   :cmyk [48 35 70 12],
+   :combinations [29],
+   :id_swatch 2,
+   :id_color 76,
+   :rgb [132 135 94],
+   :hex "#84875e",
+   :hsb [64 30 53]}
+  {:name "Olive",
+   :cmyk [48 38 100 15],
+   :combinations [96 201 254 258 277 310 334],
+   :id_swatch 2,
+   :id_color 77,
+   :rgb [131 126 49],
+   :hex "#837e31",
+   :hsb [56 63 51]}
+  {:name "Orange Citrine",
+   :cmyk [28 48 92 24],
+   :combinations [212 342],
+   :id_swatch 2,
+   :id_color 78,
+   :rgb [152 111 45],
+   :hex "#986f2d",
+   :hsb [37 70 60]}
+  {:name "Sudan Brown",
+   :cmyk [25 60 65 19],
+   :combinations [207 214 273],
+   :id_swatch 2,
+   :id_color 79,
+   :rgb [163 103 82],
+   :hex "#a36752",
+   :hsb [16 50 64]}
+  {:name "Olive Green",
+   :cmyk [56 40 85 22],
+   :combinations [66 243 270 297],
+   :id_swatch 2,
+   :id_color 80,
+   :rgb [108 113 64],
+   :hex "#6c7140",
+   :hsb [66 43 44]}
+  {:name "Light Brownish Olive",
+   :cmyk [42 46 73 24],
+   :combinations [199 318],
+   :id_swatch 2,
+   :id_color 81,
+   :rgb [128 110 75],
+   :hex "#806e4b",
+   :hsb [40 41 50]}
+  {:name "Deep Grayish Olive",
+   :cmyk [50 48 78 37],
+   :combinations [146 343],
+   :id_swatch 2,
+   :id_color 82,
+   :rgb [99 90 58],
+   :hex "#635a3a",
+   :hsb [47 41 39]}
+  {:name "Pale Raw Umber",
+   :cmyk [46 63 87 32],
+   :combinations [26 73 160 234 296],
+   :id_swatch 2,
+   :id_color 83,
+   :rgb [113 80 47],
+   :hex "#71502f",
+   :hsb [30 58 44]}
+  {:name "Sepia",
+   :cmyk [48 60 100 40],
+   :combinations [24 288],
+   :id_swatch 2,
+   :id_color 84,
+   :rgb [99 75 30],
+   :hex "#634b1e",
+   :hsb [39 70 39]}
+  {:name "Madder Brown",
+   :cmyk [36 88 100 38],
+   :combinations [28 79 98 173 237 275 323],
+   :id_swatch 2,
+   :id_color 85,
+   :rgb [118 44 25],
+   :hex "#762c19",
+   :hsb [12 79 46]}
+  {:name "Mars Brown Tobacco",
+   :cmyk [39 76 100 47],
+   :combinations [19],
+   :id_swatch 2,
+   :id_color 86,
+   :rgb [101 53 20],
+   :hex "#653514",
+   :hsb [24 80 40]}
+  {:name "Vandyke Brown",
+   :cmyk [56 71 97 52],
+   :combinations [110 113 118 182 192 328],
+   :id_swatch 2,
+   :id_color 87,
+   :rgb [76 52 23],
+   :hex "#4c3417",
+   :hsb [33 70 30]}
+  {:name "Turquoise Green",
+   :cmyk [29 0 24 0],
+   :combinations
+   [36 74 147 163 173 202 223 230 263 272 285 293 300 305 317 346],
+   :id_swatch 3,
+   :id_color 88,
+   :rgb [181 222 203],
+   :hex "#b5decb",
+   :hsb [152 18 87]}
+  {:name "Glaucous Green",
+   :cmyk [30 9 24 0],
+   :combinations [7 150 171 207 239 260],
+   :id_swatch 3,
+   :id_color 89,
+   :rgb [180 205 194],
+   :hex "#b4cdc2",
+   :hsb [153 12 80]}
+  {:name "Dark Greenish Glaucous",
+   :cmyk [30 15 36 0],
+   :combinations [264 311],
+   :id_swatch 3,
+   :id_color 90,
+   :rgb [182 194 169],
+   :hex "#b6c2a9",
+   :hsb [89 13 76]}
+  {:name "Yellow Green",
+   :cmyk [35 0 72 0],
+   :combinations [111 141 276 326 334],
+   :id_swatch 3,
+   :id_color 91,
+   :rgb [174 212 114],
+   :hex "#aed472",
+   :hsb [83 46 83]}
+  {:name "Light Green Yellow",
+   :cmyk [26 5 85 0],
+   :combinations [61 289 291 311 346],
+   :id_swatch 3,
+   :id_color 92,
+   :rgb [198 209 80],
+   :hex "#c6d150",
+   :hsb [65 62 82]}
+  {:name "Night Green",
+   :cmyk [52 0 100 0],
+   :combinations [19 32 158 326],
+   :id_swatch 3,
+   :id_color 93,
+   :rgb [135 197 64],
+   :hex "#87c540",
+   :hsb [88 68 77]}
+  {:name "Olive Yellow",
+   :cmyk [40 30 80 0],
+   :combinations [124 211 265 347],
+   :id_swatch 3,
+   :id_color 94,
+   :rgb [166 161 89],
+   :hex "#a6a159",
+   :hsb [56 46 65]}
+  {:name "Artemesia Green",
+   :cmyk [57 28 39 8],
+   :combinations [293 312],
+   :id_swatch 3,
+   :id_color 95,
+   :rgb [112 146 144],
+   :hex "#709290",
+   :hsb [176 23 57]}
+  {:name "Andover Green",
+   :cmyk [60 40 50 10],
+   :combinations [244 346],
+   :id_swatch 3,
+   :id_color 96,
+   :rgb [109 126 119],
+   :hex "#6d7e77",
+   :hsb [155 13 49]}
+  {:name "Rainette Green",
+   :cmyk [42 20 62 10],
+   :combinations [73 162 188 266 301],
+   :id_swatch 3,
+   :id_color 97,
+   :rgb [143 161 114],
+   :hex "#8fa172",
+   :hsb [83 29 63]}
+  {:name "Chromium Green",
+   :cmyk [50 16 58 20],
+   :combinations [105 200 219 283],
+   :id_swatch 3,
+   :id_color 98,
+   :rgb [113 148 112],
+   :hex "#719470",
+   :hsb [118 24 58]}
+  {:name "Pistachio Green",
+   :cmyk [64 29 56 6],
+   :combinations [127 137],
+   :id_swatch 3,
+   :id_color 99,
+   :rgb [100 143 123],
+   :hex "#648f7b",
+   :hsb [152 30 56]}
+  {:name "Sea Green",
+   :cmyk [80 0 51 0],
+   :combinations [17 21 58 86 133 250 260 284 291 340 347],
+   :id_swatch 3,
+   :id_color 100,
+   :rgb [0 180 155],
+   :hex "#00b49b",
+   :hsb [171 100 71]}
+  {:name "Benzol Green",
+   :cmyk [100 15 55 0],
+   :combinations [15 54 92 122 155 247 266 267 281 304 306],
+   :id_swatch 3,
+   :id_color 101,
+   :rgb [0 151 140],
+   :hex "#00978c",
+   :hsb [175 100 59]}
+  {:name "Light Porcelain Green",
+   :cmyk [86 22 50 3],
+   :combinations [44 193 328],
+   :id_swatch 3,
+   :id_color 102,
+   :rgb [0 145 138],
+   :hex "#00918a",
+   :hsb [177 100 57]}
+  {:name "Green",
+   :cmyk [75 21 73 0],
+   :combinations [198 216 293],
+   :id_swatch 3,
+   :id_color 103,
+   :rgb [71 155 110],
+   :hex "#479b6e",
+   :hsb [147 54 61]}
+  {:name "Dull Viridian Green",
+   :cmyk [90 20 80 0],
+   :combinations [136 256 306 316],
+   :id_swatch 3,
+   :id_color 104,
+   :rgb [0 148 101],
+   :hex "#009465",
+   :hsb [160 100 58]}
+  {:name "Oil Green",
+   :cmyk [53 28 100 8],
+   :combinations [245 299 320],
+   :id_swatch 3,
+   :id_color 105,
+   :rgb [129 145 56],
+   :hex "#819138",
+   :hsb [71 61 57]}
+  {:name "Diamine Green",
+   :cmyk [87 32 91 18],
+   :combinations [38 146 217 242 251 313],
+   :id_swatch 3,
+   :id_color 106,
+   :rgb [26 116 68],
+   :hex "#1a7444",
+   :hsb [148 78 45]}
+  {:name "Cossack Green",
+   :cmyk [76 32 91 18],
+   :combinations [5 135 262 270 278 294 319 341 348],
+   :id_swatch 3,
+   :id_color 107,
+   :rgb [67 120 66],
+   :hex "#437842",
+   :hsb [119 45 47]}
+  {:name "Lincoln Green",
+   :cmyk [60 48 86 37],
+   :combinations [70 121 203 210 280 290],
+   :id_swatch 3,
+   :id_color 108,
+   :rgb [85 87 50],
+   :hex "#555732",
+   :hsb [63 43 34]}
+  {:name "Blackish Olive",
+   :cmyk [56 32 63 55],
+   :combinations [109 318 336],
+   :id_swatch 3,
+   :id_color 109,
+   :rgb [66 83 62],
+   :hex "#42533e",
+   :hsb [108 25 33]}
+  {:name "Deep Slate Olive",
+   :cmyk [76 60 80 62],
+   :combinations [189 229 268 303 310 321 332 341 342 348],
+   :id_swatch 3,
+   :id_color 110,
+   :rgb [37 49 34],
+   :hex "#253122",
+   :hsb [108 31 19]}
+  {:name "Nile Blue",
+   :cmyk [25 0 10 0],
+   :combinations [25 250 268 302 306 330 345],
+   :id_swatch 4,
+   :id_color 111,
+   :rgb [188 228 229],
+   :hex "#bce4e5",
+   :hsb [181 18 90]}
+  {:name "Pale King's Blue",
+   :cmyk [33 4 7 0],
+   :combinations [16 49 72 75 167 196 213 234 287],
+   :id_swatch 4,
+   :id_color 112,
+   :rgb [167 212 228],
+   :hex "#a7d4e4",
+   :hsb [195 27 89]}
+  {:name "Light Glaucous Blue",
+   :cmyk [35 10 14 0],
+   :combinations [54 93 119 152 178 204 227 320 339 341],
+   :id_swatch 4,
+   :id_color 113,
+   :rgb [165 200 209],
+   :hex "#a5c8d1",
+   :hsb [192 21 82]}
+  {:name "Salvia Blue",
+   :cmyk [41 25 10 0],
+   :combinations [29 129 135 139 142 188 209 212 237 272 294 321 330],
+   :id_swatch 4,
+   :id_color 114,
+   :rgb [152 172 200],
+   :hex "#98acc8",
+   :hsb [214 24 78]}
+  {:name "Cobalt Green",
+   :cmyk [42 0 42 0],
+   :combinations [156 188 201 202 230 271 281 282 290 291 308 333],
+   :id_swatch 4,
+   :id_color 115,
+   :rgb [150 209 170],
+   :hex "#96d1aa",
+   :hsb [140 28 82]}
+  {:name "Calamine BLue",
+   :cmyk [50 0 20 0],
+   :combinations [20 41 65 159 176 255 261 287 291 300],
+   :id_swatch 4,
+   :id_color 116,
+   :rgb [120 205 209],
+   :hex "#78cdd1",
+   :hsb [182 43 82]}
+  {:name "Venice Green",
+   :cmyk [58 0 30 0],
+   :combinations [78 128 138 189 283 345],
+   :id_swatch 4,
+   :id_color 117,
+   :rgb [98 198 191],
+   :hex "#62c6bf",
+   :hsb [175 51 78]}
+  {:name "Cerulian Blue",
+   :cmyk [84 26 32 0],
+   :combinations [1 63 99 125 148 227 240 264],
+   :id_swatch 4,
+   :id_color 118,
+   :rgb [0 147 166],
+   :hex "#0093a6",
+   :hsb [186 100 65]}
+  {:name "Peacock Blue",
+   :cmyk [100 19 43 0],
+   :combinations [131 286],
+   :id_swatch 4,
+   :id_color 119,
+   :rgb [0 147 155],
+   :hex "#00939b",
+   :hsb [183 100 61]}
+  {:name "Green Blue",
+   :cmyk [82 24 40 3],
+   :combinations [12 74 79 178 208 252 259 271 330],
+   :id_swatch 4,
+   :id_color 120,
+   :rgb [8 145 151],
+   :hex "#089197",
+   :hsb [182 95 59]}
+  {:name "Olympic Blue",
+   :cmyk [69 44 10 0],
+   :combinations [44 67 157 194 231 274 324],
+   :id_swatch 4,
+   :id_color 121,
+   :rgb [91 130 180],
+   :hex "#5b82b4",
+   :hsb [213 49 71]}
+  {:name "Blue",
+   :cmyk [95 54 0 0],
+   :combinations [49 51 88 143 154 186 191 215 257 267 295 333],
+   :id_swatch 4,
+   :id_color 122,
+   :rgb [0 110 184],
+   :hex "#006eb8",
+   :hsb [204 100 72]}
+  {:name "Antwarp Blue",
+   :cmyk [100 40 30 10],
+   :combinations [85 106 114 140 163 172 208 244 258 281 299 302 334],
+   :id_swatch 4,
+   :id_color 123,
+   :rgb [0 113 144],
+   :hex "#007190",
+   :hsb [192 100 56]}
+  {:name "Helvetia Blue",
+   :cmyk [100 62 19 10],
+   :combinations [39 48 161 187 218 259 312 347],
+   :id_swatch 4,
+   :id_color 124,
+   :rgb [0 91 141],
+   :hex "#005b8d",
+   :hsb [201 100 55]}
+  {:name "Dark Medici Blue",
+   :cmyk [70 45 45 15],
+   :combinations [160 224 241 249],
+   :id_swatch 4,
+   :id_color 125,
+   :rgb [84 112 118],
+   :hex "#547076",
+   :hsb [190 29 46]}
+  {:name "Dusky Green",
+   :cmyk [100 30 64 50],
+   :combinations [94 219 225 278 284 318 332 338],
+   :id_swatch 4,
+   :id_color 126,
+   :rgb [0 79 70],
+   :hex "#004f46",
+   :hsb [173 100 31]}
+  {:name "Deep Lyons Blue",
+   :cmyk [100 85 15 6],
+   :combinations [22 38 101 126 179 199 236 247 314 344],
+   :id_swatch 4,
+   :id_color 127,
+   :rgb [28 66 134],
+   :hex "#1c4286",
+   :hsb [218 79 53]}
+  {:name "Violet Blue",
+   :cmyk [85 79 38 16],
+   :combinations [75 83 89 98 125 233 286 289 297 309 339],
+   :id_swatch 4,
+   :id_color 128,
+   :rgb [64 69 106],
+   :hex "#40456a",
+   :hsb [232 40 42]}
+  {:name "Vandar Poel's Blue",
+   :cmyk [100 73 43 10],
+   :combinations [5 77 151 167 168 309 343],
+   :id_swatch 4,
+   :id_color 129,
+   :rgb [7 79 111],
+   :hex "#074f6f",
+   :hsb [198 94 44]}
+  {:name "Dark Tyrian Blue",
+   :cmyk [90 66 36 50],
+   :combinations [2 60 67 119 141 245 279],
+   :id_swatch 4,
+   :id_color 130,
+   :rgb [18 53 78],
+   :hex "#12354e",
+   :hsb [204 77 31]}
+  {:name "Dull Violet Black",
+   :cmyk [95 106 38 50],
+   :combinations [95 106 145 265 277 289 295 331],
+   :id_swatch 4,
+   :id_color 131,
+   :rgb [0 99 103],
+   :hex "#006367",
+   :hsb [182 100 40]}
+  {:name "Deep Indigo",
+   :cmyk [100 92 52 60],
+   :combinations [6 28 139 155 182 211 232],
+   :id_swatch 4,
+   :id_color 132,
+   :rgb [6 19 48],
+   :hex "#061330",
+   :hsb [221 88 19]}
+  {:name "Deep Slate Green",
+   :cmyk [80 50 60 70],
+   :combinations [84 149 166 271 318 325],
+   :id_swatch 4,
+   :id_color 133,
+   :rgb [15 46 44],
+   :hex "#0f2e2c",
+   :hsb [176 67 18]}
+  {:name "Grayish Lavender - A",
+   :cmyk [28 28 0 0],
+   :combinations [8 15 159 177 218 248 307],
+   :id_swatch 5,
+   :id_color 134,
+   :rgb [180 176 216],
+   :hex "#b4b0d8",
+   :hsb [245 19 85]}
+  {:name "Grayish Lavender - B",
+   :cmyk [25 33 20 0],
+   :combinations [47 56 174 187 235 327 329 338],
+   :id_swatch 5,
+   :id_color 135,
+   :rgb [192 168 179],
+   :hex "#c0a8b3",
+   :hsb [332 13 75]}
+  {:name "Laelia Pink",
+   :cmyk [20 48 18 0],
+   :combinations [20 254 280 337],
+   :id_swatch 5,
+   :id_color 136,
+   :rgb [202 145 167],
+   :hex "#ca91a7",
+   :hsb [336 28 79]}
+  {:name "Lilac",
+   :cmyk [28 54 8 0],
+   :combinations [143 162 282 347],
+   :id_swatch 5,
+   :id_color 137,
+   :rgb [184 132 175],
+   :hex "#b884af",
+   :hsb [310 28 72]}
+  {:name "Eupatorium Purple",
+   :cmyk [25 79 12 0],
+   :combinations [215 315 322],
+   :id_swatch 5,
+   :id_color 138,
+   :rgb [191 88 146],
+   :hex "#bf5892",
+   :hsb [325 54 75]}
+  {:name "Light Mauve",
+   :cmyk [43 62 5 0],
+   :combinations [23 80 128 134 180 274 331],
+   :id_swatch 5,
+   :id_color 139,
+   :rgb [154 114 170],
+   :hex "#9a72aa",
+   :hsb [282 33 67]}
+  {:name "Aconite Violet",
+   :cmyk [39 68 5 0],
+   :combinations [43 64 90 187 220 257 269 301 307 324 344],
+   :id_swatch 5,
+   :id_color 140,
+   :rgb [163 106 165],
+   :hex "#a36aa5",
+   :hsb [297 36 65]}
+  {:name "Dull Blue Violet",
+   :cmyk [57 60 17 0],
+   :combinations [9 100],
+   :id_swatch 5,
+   :id_color 141,
+   :rgb [128 113 158],
+   :hex "#80719e",
+   :hsb [259 28 62]}
+  {:name "Dark Soft Violet",
+   :cmyk [70 68 13 0],
+   :combinations [64 127 197],
+   :id_swatch 5,
+   :id_color 142,
+   :rgb [102 98 156],
+   :hex "#66629c",
+   :hsb [243 37 61]}
+  {:name "Blue Violet",
+   :cmyk [72 80 0 0],
+   :combinations [116 175 196 322 345],
+   :id_swatch 5,
+   :id_color 143,
+   :rgb [100 80 161],
+   :hex "#6450a1",
+   :hsb [254 50 63]}
+  {:name "Purple Drab",
+   :cmyk [38 65 49 26],
+   :combinations [236],
+   :id_swatch 5,
+   :id_color 144,
+   :rgb [131 86 91],
+   :hex "#83565b",
+   :hsb [352 34 51]}
+  {:name "Deep Violet / Plumbeous",
+   :cmyk [61 52 43 7],
+   :combinations [183 192 218],
+   :id_swatch 5,
+   :id_color 145,
+   :rgb [112 114 124],
+   :hex "#70727c",
+   :hsb [229 10 49]}
+  {:name "Veronia Purple",
+   :cmyk [42 78 46 15],
+   :combinations [13 24 168 183],
+   :id_swatch 5,
+   :id_color 146,
+   :rgb [140 76 97],
+   :hex "#8c4c61",
+   :hsb [339 46 55]}
+  {:name "Dark Slate Purple",
+   :cmyk [64 85 60 10],
+   :combinations [225 248],
+   :id_swatch 5,
+   :id_color 147,
+   :rgb [112 67 87],
+   :hex "#704357",
+   :hsb [332 40 44]}
+  {:name "Taupe Brown",
+   :cmyk [30 70 35 40],
+   :combinations [57 123 174 224 275 280 288],
+   :id_swatch 5,
+   :id_color 148,
+   :rgb [122 68 86],
+   :hex "#7a4456",
+   :hsb [339 44 48]}
+  {:name "Violet Carmine",
+   :cmyk [64 90 70 10],
+   :combinations [337],
+   :id_swatch 5,
+   :id_color 149,
+   :rgb [113 59 76],
+   :hex "#713b4c",
+   :hsb [340 48 44]}
+  {:name "Violet",
+   :cmyk [85 90 18 0],
+   :combinations [42 56 130 156 164 181 205 214 226 316 331 335],
+   :id_swatch 5,
+   :id_color 150,
+   :rgb [80 64 135],
+   :hex "#504087",
+   :hsb [253 53 53]}
+  {:name "Red Violet",
+   :cmyk [76 100 25 15],
+   :combinations [4 37 134 136 170 172 183 316],
+   :id_swatch 5,
+   :id_color 151,
+   :rgb [89 37 106],
+   :hex "#59256a",
+   :hsb [284 65 42]}
+  {:name "Cotinga Purple",
+   :cmyk [66 100 42 40],
+   :combinations [61 181 238 253 307 329 348],
+   :id_swatch 5,
+   :id_color 152,
+   :rgb [80 19 69],
+   :hex "#501345",
+   :hsb [310 76 31]}
+  {:name "Dusky Madder Violet",
+   :cmyk [75 100 46 30],
+   :combinations [18 50 53 82 103 314],
+   :id_swatch 5,
+   :id_color 153,
+   :rgb [78 29 76],
+   :hex "#4e1d4c",
+   :hsb [302 63 31]}
+  {:name "White",
+   :cmyk [0 0 0 0],
+   :combinations [55],
+   :id_swatch 6,
+   :id_color 154,
+   :rgb [255 255 255],
+   :hex "#ffffff",
+   :hsb [0 0 100]}
+  {:name "Neutral Gray",
+   :cmyk [29 18 20 0],
+   :combinations [34 139 180 195 197 221 228 229 273 303 324 340],
+   :id_swatch 6,
+   :id_color 155,
+   :rgb [182 191 193],
+   :hex "#b6bfc1",
+   :hsb [190 6 76]}
+  {:name "Mineral Gray",
+   :cmyk [33 18 25 7],
+   :combinations [11 30],
+   :id_swatch 6,
+   :id_color 156,
+   :rgb [162 176 173],
+   :hex "#a2b0ad",
+   :hsb [167 8 69]}
+  {:name "Warm Gray",
+   :cmyk [37 28 36 3],
+   :combinations [69 76 81 143 169 238 259 261],
+   :id_swatch 6,
+   :id_color 157,
+   :rgb [161 163 154],
+   :hex "#a1a39a",
+   :hsb [73 6 64]}
+  {:name "Slate Color",
+   :cmyk [85 70 62 30],
+   :combinations [27 33 57 140 202 243 245 251 253 263 296 329 335],
+   :id_swatch 6,
+   :id_color 158,
+   :rgb [52 68 76],
+   :hex "#34444c",
+   :hsb [199 32 30]}
+  {:name "Black",
+   :cmyk [20 10 15 100],
+   :combinations
+   [46
+    52
+    62
+    69
+    112
+    117
+    144
+    190
+    207
+    216
+    221
+    242
+    255
+    256
+    269
+    276
+    288
+    298
+    313
+    323
+    337
+    340
+    344],
+   :id_swatch 6,
+   :id_color 159,
+   :rgb [18 19 21],
+   :hex "#121315",
+   :hsb [219 14 8]}),
+ :combos
+ ({:id_combo 1,
+   :id_colors [66 118],
+   :hex ["#d96629" "#0093a6"],
+   :hsb [[21 81 85] [186 100 65]]}
+  {:id_combo 2,
+   :id_colors [62 130],
+   :hex ["#f99d1c" "#12354e"],
+   :hsb [[35 89 98] [204 77 31]]}
+  {:id_combo 3,
+   :id_colors [14 40],
+   :hex ["#bb7125" "#ffefae"],
+   :hsb [[30 80 73] [48 32 100]]}
+  {:id_combo 4,
+   :id_colors [51 151],
+   :hex ["#c6a56e" "#59256a"],
+   :hsb [[37 44 78] [284 65 42]]}
+  {:id_combo 5,
+   :id_colors [107 129],
+   :hex ["#437842" "#074f6f"],
+   :hsb [[119 45 47] [198 94 44]]}
+  {:id_combo 6,
+   :id_colors [8 132],
+   :hex ["#f48067" "#061330"],
+   :hsb [[11 58 96] [221 88 19]]}
+  {:id_combo 7,
+   :id_colors [64 89],
+   :hex ["#f47321" "#b4cdc2"],
+   :hsb [[23 86 96] [153 12 80]]}
+  {:id_combo 8,
+   :id_colors [67 134],
+   :hex ["#c27543" "#b4b0d8"],
+   :hsb [[24 65 76] [245 19 85]]}
+  {:id_combo 9,
+   :id_colors [37 141],
+   :hex ["#632d5e" "#80719e"],
+   :hsb [[305 55 39] [259 28 62]]}
+  {:id_combo 10,
+   :id_colors [67 74],
+   :hex ["#c27543" "#8b835b"],
+   :hsb [[24 65 76] [50 35 55]]}
+  {:id_combo 11,
+   :id_colors [42 156],
+   :hex ["#ead2a2" "#a2b0ad"],
+   :hsb [[40 31 92] [167 8 69]]}
+  {:id_combo 12,
+   :id_colors [51 120],
+   :hex ["#c6a56e" "#089197"],
+   :hsb [[37 44 78] [182 95 59]]}
+  {:id_combo 13,
+   :id_colors [14 146],
+   :hex ["#bb7125" "#8c4c61"],
+   :hsb [[30 80 73] [339 46 55]]}
+  {:id_combo 14,
+   :id_colors [10 41],
+   :hex ["#f27291" "#fbe6a0"],
+   :hsb [[345 53 95] [46 36 98]]}
+  {:id_combo 15,
+   :id_colors [101 134],
+   :hex ["#00978c" "#b4b0d8"],
+   :hsb [[175 100 59] [245 19 85]]}
+  {:id_combo 16,
+   :id_colors [34 112],
+   :hex ["#82231e" "#a7d4e4"],
+   :hsb [[3 77 51] [195 27 89]]}
+  {:id_combo 17,
+   :id_colors [13 100],
+   :hex ["#da525d" "#00b49b"],
+   :hsb [[354 62 85] [171 100 71]]}
+  {:id_combo 18,
+   :id_colors [4 153],
+   :hex ["#d1b0a6" "#4e1d4c"],
+   :hsb [[14 21 82] [302 63 31]]}
+  {:id_combo 19,
+   :id_colors [86 93],
+   :hex ["#653514" "#87c540"],
+   :hsb [[24 80 40] [88 68 77]]}
+  {:id_combo 20,
+   :id_colors [116 136],
+   :hex ["#78cdd1" "#ca91a7"],
+   :hsb [[182 43 82] [336 28 79]]}
+  {:id_combo 21,
+   :id_colors [8 100],
+   :hex ["#f48067" "#00b49b"],
+   :hsb [[11 58 96] [171 100 71]]}
+  {:id_combo 22,
+   :id_colors [55 127],
+   :hex ["#fff200" "#1c4286"],
+   :hsb [[57 100 100] [218 79 53]]}
+  {:id_combo 23,
+   :id_colors [46 139],
+   :hex ["#fdc57d" "#9a72aa"],
+   :hsb [[34 51 99] [282 33 67]]}
+  {:id_combo 24,
+   :id_colors [84 146],
+   :hex ["#634b1e" "#8c4c61"],
+   :hsb [[39 70 39] [339 46 55]]}
+  {:id_combo 25,
+   :id_colors [19 111],
+   :hex ["#c55347" "#bce4e5"],
+   :hsb [[6 64 77] [181 18 90]]}
+  {:id_combo 26,
+   :id_colors [48 83],
+   :hex ["#f3a257" "#71502f"],
+   :hsb [[29 64 95] [30 58 44]]}
+  {:id_combo 27,
+   :id_colors [2 158],
+   :hex ["#f8b5ba" "#34444c"],
+   :hsb [[355 27 97] [199 32 30]]}
+  {:id_combo 28,
+   :id_colors [85 132],
+   :hex ["#762c19" "#061330"],
+   :hsb [[12 79 46] [221 88 19]]}
+  {:id_combo 29,
+   :id_colors [76 114],
+   :hex ["#84875e" "#98acc8"],
+   :hsb [[64 30 53] [214 24 78]]}
+  {:id_combo 30,
+   :id_colors [30 156],
+   :hex ["#ab2339" "#a2b0ad"],
+   :hsb [[349 80 67] [167 8 69]]}
+  {:id_combo 31,
+   :id_colors [18 40],
+   :hex ["#dd4127" "#ffefae"],
+   :hsb [[9 82 87] [48 32 100]]}
+  {:id_combo 32,
+   :id_colors [50 93],
+   :hex ["#d8a37b" "#87c540"],
+   :hsb [[26 43 85] [88 68 77]]}
+  {:id_combo 33,
+   :id_colors [14 158],
+   :hex ["#bb7125" "#34444c"],
+   :hsb [[30 80 73] [199 32 30]]}
+  {:id_combo 34,
+   :id_colors [9 155],
+   :hex ["#f38094" "#b6bfc1"],
+   :hsb [[349 47 95] [190 6 76]]}
+  {:id_combo 35,
+   :id_colors [5 29],
+   :hex ["#b59392" "#a62c37"],
+   :hsb [[2 19 71] [354 73 65]]}
+  {:id_combo 36,
+   :id_colors [69 88],
+   :hex ["#c09f2c" "#b5decb"],
+   :hsb [[46 77 75] [152 18 87]]}
+  {:id_combo 37,
+   :id_colors [28 151],
+   :hex ["#a84222" "#59256a"],
+   :hsb [[14 80 66] [284 65 42]]}
+  {:id_combo 38,
+   :id_colors [106 127],
+   :hex ["#1a7444" "#1c4286"],
+   :hsb [[148 78 45] [218 79 53]]}
+  {:id_combo 39,
+   :id_colors [23 124],
+   :hex ["#cc1236" "#005b8d"],
+   :hsb [[347 91 80] [201 100 55]]}
+  {:id_combo 40,
+   :id_colors [15 71],
+   :hex ["#c56227" "#b2b73e"],
+   :hsb [[22 80 77] [62 66 72]]}
+  {:id_combo 41,
+   :id_colors [74 116],
+   :hex ["#8b835b" "#78cdd1"],
+   :hsb [[50 35 55] [182 43 82]]}
+  {:id_combo 42,
+   :id_colors [60 150],
+   :hex ["#e2b53f" "#504087"],
+   :hsb [[43 72 89] [253 53 53]]}
+  {:id_combo 43,
+   :id_colors [2 140],
+   :hex ["#f8b5ba" "#a36aa5"],
+   :hsb [[355 27 97] [297 36 65]]}
+  {:id_combo 44,
+   :id_colors [102 121],
+   :hex ["#00918a" "#5b82b4"],
+   :hsb [[177 100 57] [213 49 71]]}
+  {:id_combo 45,
+   :id_colors [43 56],
+   :hex ["#fdd4bd" "#f9ed43"],
+   :hsb [[22 25 99] [56 73 98]]}
+  {:id_combo 46,
+   :id_colors [64 159],
+   :hex ["#f47321" "#121315"],
+   :hsb [[23 86 96] [219 14 8]]}
+  {:id_combo 47,
+   :id_colors [19 135],
+   :hex ["#c55347" "#c0a8b3"],
+   :hsb [[6 64 77] [332 13 75]]}
+  {:id_combo 48,
+   :id_colors [25 124],
+   :hex ["#b74074" "#005b8d"],
+   :hsb [[333 65 72] [201 100 55]]}
+  {:id_combo 49,
+   :id_colors [112 122],
+   :hex ["#a7d4e4" "#006eb8"],
+   :hsb [[195 27 89] [204 100 72]]}
+  {:id_combo 50,
+   :id_colors [42 153],
+   :hex ["#ead2a2" "#4e1d4c"],
+   :hsb [[40 31 92] [302 63 31]]}
+  {:id_combo 51,
+   :id_colors [29 122],
+   :hex ["#a62c37" "#006eb8"],
+   :hsb [[354 73 65] [204 100 72]]}
+  {:id_combo 52,
+   :id_colors [39 159],
+   :hex ["#f5ebc1" "#121315"],
+   :hsb [[48 21 96] [219 14 8]]}
+  {:id_combo 53,
+   :id_colors [62 153],
+   :hex ["#f99d1c" "#4e1d4c"],
+   :hsb [[35 89 98] [302 63 31]]}
+  {:id_combo 54,
+   :id_colors [101 113],
+   :hex ["#00978c" "#a5c8d1"],
+   :hsb [[175 100 59] [192 21 82]]}
+  {:id_combo 55,
+   :id_colors [11 154],
+   :hex ["#d46d7a" "#ffffff"],
+   :hsb [[351 49 83] [0 0 100]]}
+  {:id_combo 56,
+   :id_colors [135 150],
+   :hex ["#c0a8b3" "#504087"],
+   :hsb [[332 13 75] [253 53 53]]}
+  {:id_combo 57,
+   :id_colors [148 158],
+   :hex ["#7a4456" "#34444c"],
+   :hsb [[339 44 48] [199 32 30]]}
+  {:id_combo 58,
+   :id_colors [33 100],
+   :hex ["#793326" "#00b49b"],
+   :hsb [[9 69 47] [171 100 71]]}
+  {:id_combo 59,
+   :id_colors [9 72],
+   :hex ["#f38094" "#b09f36"],
+   :hsb [[349 47 95] [51 69 69]]}
+  {:id_combo 60,
+   :id_colors [40 130],
+   :hex ["#ffefae" "#12354e"],
+   :hsb [[48 32 100] [204 77 31]]}
+  {:id_combo 61,
+   :id_colors [92 152],
+   :hex ["#c6d150" "#501345"],
+   :hsb [[65 62 82] [310 76 31]]}
+  {:id_combo 62,
+   :id_colors [55 159],
+   :hex ["#fff200" "#121315"],
+   :hsb [[57 100 100] [219 14 8]]}
+  {:id_combo 63,
+   :id_colors [38 118],
+   :hex ["#6e4145" "#0093a6"],
+   :hsb [[354 41 43] [186 100 65]]}
+  {:id_combo 64,
+   :id_colors [140 142],
+   :hex ["#a36aa5" "#66629c"],
+   :hsb [[297 36 65] [243 37 61]]}
+  {:id_combo 65,
+   :id_colors [69 116],
+   :hex ["#c09f2c" "#78cdd1"],
+   :hsb [[46 77 75] [182 43 82]]}
+  {:id_combo 66,
+   :id_colors [59 80],
+   :hex ["#d6b43e" "#6c7140"],
+   :hsb [[46 71 84] [66 43 44]]}
+  {:id_combo 67,
+   :id_colors [121 130],
+   :hex ["#5b82b4" "#12354e"],
+   :hsb [[213 49 71] [204 77 31]]}
+  {:id_combo 68,
+   :id_colors [5 55],
+   :hex ["#b59392" "#fff200"],
+   :hsb [[2 19 71] [57 100 100]]}
+  {:id_combo 69,
+   :id_colors [157 159],
+   :hex ["#a1a39a" "#121315"],
+   :hsb [[73 6 64] [219 14 8]]}
+  {:id_combo 70,
+   :id_colors [14 108],
+   :hex ["#bb7125" "#555732"],
+   :hsb [[30 80 73] [63 43 34]]}
+  {:id_combo 71,
+   :id_colors [30 50],
+   :hex ["#ab2339" "#d8a37b"],
+   :hsb [[349 80 67] [26 43 85]]}
+  {:id_combo 72,
+   :id_colors [39 112],
+   :hex ["#f5ebc1" "#a7d4e4"],
+   :hsb [[48 21 96] [195 27 89]]}
+  {:id_combo 73,
+   :id_colors [83 97],
+   :hex ["#71502f" "#8fa172"],
+   :hsb [[30 58 44] [83 29 63]]}
+  {:id_combo 74,
+   :id_colors [88 120],
+   :hex ["#b5decb" "#089197"],
+   :hsb [[152 18 87] [182 95 59]]}
+  {:id_combo 75,
+   :id_colors [112 128],
+   :hex ["#a7d4e4" "#40456a"],
+   :hsb [[195 27 89] [232 40 42]]}
+  {:id_combo 76,
+   :id_colors [40 157],
+   :hex ["#ffefae" "#a1a39a"],
+   :hsb [[48 32 100] [73 6 64]]}
+  {:id_combo 77,
+   :id_colors [13 129],
+   :hex ["#da525d" "#074f6f"],
+   :hsb [[354 62 85] [198 94 44]]}
+  {:id_combo 78,
+   :id_colors [45 117],
+   :hex ["#eeb481" "#62c6bf"],
+   :hsb [[28 46 93] [175 51 78]]}
+  {:id_combo 79,
+   :id_colors [85 120],
+   :hex ["#762c19" "#089197"],
+   :hsb [[12 79 46] [182 95 59]]}
+  {:id_combo 80,
+   :id_colors [39 139],
+   :hex ["#f5ebc1" "#9a72aa"],
+   :hsb [[48 21 96] [282 33 67]]}
+  {:id_combo 81,
+   :id_colors [48 157],
+   :hex ["#f3a257" "#a1a39a"],
+   :hsb [[29 64 95] [73 6 64]]}
+  {:id_combo 82,
+   :id_colors [33 153],
+   :hex ["#793326" "#4e1d4c"],
+   :hsb [[9 69 47] [302 63 31]]}
+  {:id_combo 83,
+   :id_colors [53 128],
+   :hex ["#c1c494" "#40456a"],
+   :hsb [[64 24 77] [232 40 42]]}
+  {:id_combo 84,
+   :id_colors [43 133],
+   :hex ["#fdd4bd" "#0f2e2c"],
+   :hsb [[22 25 99] [176 67 18]]}
+  {:id_combo 85,
+   :id_colors [15 123],
+   :hex ["#c56227" "#007190"],
+   :hsb [[22 80 77] [192 100 56]]}
+  {:id_combo 86,
+   :id_colors [14 100],
+   :hex ["#bb7125" "#00b49b"],
+   :hsb [[30 80 73] [171 100 71]]}
+  {:id_combo 87,
+   :id_colors [2 71],
+   :hex ["#f8b5ba" "#b2b73e"],
+   :hsb [[355 27 97] [62 66 72]]}
+  {:id_combo 88,
+   :id_colors [43 122],
+   :hex ["#fdd4bd" "#006eb8"],
+   :hsb [[22 25 99] [204 100 72]]}
+  {:id_combo 89,
+   :id_colors [62 128],
+   :hex ["#f99d1c" "#40456a"],
+   :hsb [[35 89 98] [232 40 42]]}
+  {:id_combo 90,
+   :id_colors [9 140],
+   :hex ["#f38094" "#a36aa5"],
+   :hsb [[349 47 95] [297 36 65]]}
+  {:id_combo 91,
+   :id_colors [38 68],
+   :hex ["#6e4145" "#c16b27"],
+   :hsb [[354 41 43] [26 80 76]]}
+  {:id_combo 92,
+   :id_colors [6 101],
+   :hex ["#f58e84" "#00978c"],
+   :hsb [[5 46 96] [175 100 59]]}
+  {:id_combo 93,
+   :id_colors [72 113],
+   :hex ["#b09f36" "#a5c8d1"],
+   :hsb [[51 69 69] [192 21 82]]}
+  {:id_combo 94,
+   :id_colors [42 126],
+   :hex ["#ead2a2" "#004f46"],
+   :hsb [[40 31 92] [173 100 31]]}
+  {:id_combo 95,
+   :id_colors [33 131],
+   :hex ["#793326" "#006367"],
+   :hsb [[9 69 47] [182 100 40]]}
+  {:id_combo 96,
+   :id_colors [60 77],
+   :hex ["#e2b53f" "#837e31"],
+   :hsb [[43 72 89] [56 63 51]]}
+  {:id_combo 97,
+   :id_colors [2 19],
+   :hex ["#f8b5ba" "#c55347"],
+   :hsb [[355 27 97] [6 64 77]]}
+  {:id_combo 98,
+   :id_colors [85 128],
+   :hex ["#762c19" "#40456a"],
+   :hsb [[12 79 46] [232 40 42]]}
+  {:id_combo 99,
+   :id_colors [40 118],
+   :hex ["#ffefae" "#0093a6"],
+   :hsb [[48 32 100] [186 100 65]]}
+  {:id_combo 100,
+   :id_colors [73 141],
+   :hex ["#96874c" "#80719e"],
+   :hsb [[48 49 59] [259 28 62]]}
+  {:id_combo 101,
+   :id_colors [3 127],
+   :hex ["#e1b4b6" "#1c4286"],
+   :hsb [[356 20 88] [218 79 53]]}
+  {:id_combo 102,
+   :id_colors [42 68],
+   :hex ["#ead2a2" "#c16b27"],
+   :hsb [[40 31 92] [26 80 76]]}
+  {:id_combo 103,
+   :id_colors [67 153],
+   :hex ["#c27543" "#4e1d4c"],
+   :hsb [[24 65 76] [302 63 31]]}
+  {:id_combo 104,
+   :id_colors [29 39],
+   :hex ["#a62c37" "#f5ebc1"],
+   :hsb [[354 73 65] [48 21 96]]}
+  {:id_combo 105,
+   :id_colors [3 98],
+   :hex ["#e1b4b6" "#719470"],
+   :hsb [[356 20 88] [118 24 58]]}
+  {:id_combo 106,
+   :id_colors [123 131],
+   :hex ["#007190" "#006367"],
+   :hsb [[192 100 56] [182 100 40]]}
+  {:id_combo 107,
+   :id_colors [57 75],
+   :hex ["#ffdd00" "#848061"],
+   :hsb [[52 100 100] [53 27 52]]}
+  {:id_combo 108,
+   :id_colors [9 28],
+   :hex ["#f38094" "#a84222"],
+   :hsb [[349 47 95] [14 80 66]]}
+  {:id_combo 109,
+   :id_colors [40 109],
+   :hex ["#ffefae" "#42533e"],
+   :hsb [[48 32 100] [108 25 33]]}
+  {:id_combo 110,
+   :id_colors [32 87],
+   :hex ["#7c4225" "#4c3417"],
+   :hsb [[20 70 49] [33 70 30]]}
+  {:id_combo 111,
+   :id_colors [40 91],
+   :hex ["#ffefae" "#aed472"],
+   :hsb [[48 32 100] [83 46 83]]}
+  {:id_combo 112,
+   :id_colors [8 159],
+   :hex ["#f48067" "#121315"],
+   :hsb [[11 58 96] [219 14 8]]}
+  {:id_combo 113,
+   :id_colors [43 87],
+   :hex ["#fdd4bd" "#4c3417"],
+   :hsb [[22 25 99] [33 70 30]]}
+  {:id_combo 114,
+   :id_colors [61 123],
+   :hex ["#fcb315" "#007190"],
+   :hsb [[41 92 99] [192 100 56]]}
+  {:id_combo 115,
+   :id_colors [41 65],
+   :hex ["#fbe6a0" "#f15a31"],
+   :hsb [[46 36 98] [13 80 95]]}
+  {:id_combo 116,
+   :id_colors [3 143],
+   :hex ["#e1b4b6" "#6450a1"],
+   :hsb [[356 20 88] [254 50 63]]}
+  {:id_combo 117,
+   :id_colors [23 159],
+   :hex ["#cc1236" "#121315"],
+   :hsb [[347 91 80] [219 14 8]]}
+  {:id_combo 118,
+   :id_colors [60 87],
+   :hex ["#e2b53f" "#4c3417"],
+   :hsb [[43 72 89] [33 70 30]]}
+  {:id_combo 119,
+   :id_colors [113 130],
+   :hex ["#a5c8d1" "#12354e"],
+   :hsb [[192 21 82] [204 77 31]]}
+  {:id_combo 120,
+   :id_colors [3 30],
+   :hex ["#e1b4b6" "#ab2339"],
+   :hsb [[356 20 88] [349 80 67]]}
+  {:id_combo 121,
+   :id_colors [32 50 108],
+   :hex ["#7c4225" "#d8a37b" "#555732"],
+   :hsb [[20 70 49] [26 43 85] [63 43 34]]}
+  {:id_combo 122,
+   :id_colors [23 47 101],
+   :hex ["#cc1236" "#fdbe68" "#00978c"],
+   :hsb [[347 91 80] [35 59 99] [175 100 59]]}
+  {:id_combo 123,
+   :id_colors [6 56 148],
+   :hex ["#f58e84" "#f9ed43" "#7a4456"],
+   :hsb [[5 46 96] [56 73 98] [339 44 48]]}
+  {:id_combo 124,
+   :id_colors [36 60 94],
+   :hex ["#802726" "#e2b53f" "#a6a159"],
+   :hsb [[1 70 50] [43 72 89] [56 46 65]]}
+  {:id_combo 125,
+   :id_colors [4 118 128],
+   :hex ["#d1b0a6" "#0093a6" "#40456a"],
+   :hsb [[14 21 82] [186 100 65] [232 40 42]]}
+  {:id_combo 126,
+   :id_colors [42 60 127],
+   :hex ["#ead2a2" "#e2b53f" "#1c4286"],
+   :hsb [[40 31 92] [43 72 89] [218 79 53]]}
+  {:id_combo 127,
+   :id_colors [46 99 142],
+   :hex ["#fdc57d" "#648f7b" "#66629c"],
+   :hsb [[34 51 99] [152 30 56] [243 37 61]]}
+  {:id_combo 128,
+   :id_colors [2 117 139],
+   :hex ["#f8b5ba" "#62c6bf" "#9a72aa"],
+   :hsb [[355 27 97] [175 51 78] [282 33 67]]}
+  {:id_combo 129,
+   :id_colors [57 70 114],
+   :hex ["#ffdd00" "#bc892b" "#98acc8"],
+   :hsb [[52 100 100] [39 77 74] [214 24 78]]}
+  {:id_combo 130,
+   :id_colors [14 29 150],
+   :hex ["#bb7125" "#a62c37" "#504087"],
+   :hsb [[30 80 73] [354 73 65] [253 53 53]]}
+  {:id_combo 131,
+   :id_colors [14 66 119],
+   :hex ["#bb7125" "#d96629" "#00939b"],
+   :hsb [[30 80 73] [21 81 85] [183 100 61]]}
+  {:id_combo 132,
+   :id_colors [39 48 72],
+   :hex ["#f5ebc1" "#f3a257" "#b09f36"],
+   :hsb [[48 21 96] [29 64 95] [51 69 69]]}
+  {:id_combo 133,
+   :id_colors [34 72 100],
+   :hex ["#82231e" "#b09f36" "#00b49b"],
+   :hsb [[3 77 51] [51 69 69] [171 100 71]]}
+  {:id_combo 134,
+   :id_colors [9 139 151],
+   :hex ["#f38094" "#9a72aa" "#59256a"],
+   :hsb [[349 47 95] [282 33 67] [284 65 42]]}
+  {:id_combo 135,
+   :id_colors [39 107 114],
+   :hex ["#f5ebc1" "#437842" "#98acc8"],
+   :hsb [[48 21 96] [119 45 47] [214 24 78]]}
+  {:id_combo 136,
+   :id_colors [22 104 151],
+   :hex ["#cc2e43" "#009465" "#59256a"],
+   :hsb [[351 77 80] [160 100 58] [284 65 42]]}
+  {:id_combo 137,
+   :id_colors [19 46 99],
+   :hex ["#c55347" "#fdc57d" "#648f7b"],
+   :hsb [[6 64 77] [34 51 99] [152 30 56]]}
+  {:id_combo 138,
+   :id_colors [48 56 117],
+   :hex ["#f3a257" "#f9ed43" "#62c6bf"],
+   :hsb [[29 64 95] [56 73 98] [175 51 78]]}
+  {:id_combo 139,
+   :id_colors [114 132 155],
+   :hex ["#98acc8" "#061330" "#b6bfc1"],
+   :hsb [[214 24 78] [221 88 19] [190 6 76]]}
+  {:id_combo 140,
+   :id_colors [48 123 158],
+   :hex ["#f3a257" "#007190" "#34444c"],
+   :hsb [[29 64 95] [192 100 56] [199 32 30]]}
+  {:id_combo 141,
+   :id_colors [64 91 130],
+   :hex ["#f47321" "#aed472" "#12354e"],
+   :hsb [[23 86 96] [83 46 83] [204 77 31]]}
+  {:id_combo 142,
+   :id_colors [27 69 114],
+   :hex ["#a94251" "#c09f2c" "#98acc8"],
+   :hsb [[350 61 66] [46 77 75] [214 24 78]]}
+  {:id_combo 143,
+   :id_colors [122 137 157],
+   :hex ["#006eb8" "#b884af" "#a1a39a"],
+   :hsb [[204 100 72] [310 28 72] [73 6 64]]}
+  {:id_combo 144,
+   :id_colors [25 64 159],
+   :hex ["#b74074" "#f47321" "#121315"],
+   :hsb [[333 65 72] [23 86 96] [219 14 8]]}
+  {:id_combo 145,
+   :id_colors [32 71 131],
+   :hex ["#7c4225" "#b2b73e" "#006367"],
+   :hsb [[20 70 49] [62 66 72] [182 100 40]]}
+  {:id_combo 146,
+   :id_colors [70 82 106],
+   :hex ["#bc892b" "#635a3a" "#1a7444"],
+   :hsb [[39 77 74] [47 41 39] [148 78 45]]}
+  {:id_combo 147,
+   :id_colors [10 34 88],
+   :hex ["#f27291" "#82231e" "#b5decb"],
+   :hsb [[345 53 95] [3 77 51] [152 18 87]]}
+  {:id_combo 148,
+   :id_colors [59 61 118],
+   :hex ["#d6b43e" "#fcb315" "#0093a6"],
+   :hsb [[46 71 84] [41 92 99] [186 100 65]]}
+  {:id_combo 149,
+   :id_colors [59 64 133],
+   :hex ["#d6b43e" "#f47321" "#0f2e2c"],
+   :hsb [[46 71 84] [23 86 96] [176 67 18]]}
+  {:id_combo 150,
+   :id_colors [43 71 89],
+   :hex ["#fdd4bd" "#b2b73e" "#b4cdc2"],
+   :hsb [[22 25 99] [62 66 72] [153 12 80]]}
+  {:id_combo 151,
+   :id_colors [39 62 129],
+   :hex ["#f5ebc1" "#f99d1c" "#074f6f"],
+   :hsb [[48 21 96] [35 89 98] [198 94 44]]}
+  {:id_combo 152,
+   :id_colors [19 33 113],
+   :hex ["#c55347" "#793326" "#a5c8d1"],
+   :hsb [[6 64 77] [9 69 47] [192 21 82]]}
+  {:id_combo 153,
+   :id_colors [9 61 71],
+   :hex ["#f38094" "#fcb315" "#b2b73e"],
+   :hsb [[349 47 95] [41 92 99] [62 66 72]]}
+  {:id_combo 154,
+   :id_colors [23 55 122],
+   :hex ["#cc1236" "#fff200" "#006eb8"],
+   :hsb [[347 91 80] [57 100 100] [204 100 72]]}
+  {:id_combo 155,
+   :id_colors [16 101 132],
+   :hex ["#eb5324" "#00978c" "#061330"],
+   :hsb [[14 85 92] [175 100 59] [221 88 19]]}
+  {:id_combo 156,
+   :id_colors [59 115 150],
+   :hex ["#d6b43e" "#96d1aa" "#504087"],
+   :hsb [[46 71 84] [140 28 82] [253 53 53]]}
+  {:id_combo 157,
+   :id_colors [35 59 121],
+   :hex ["#7e133a" "#d6b43e" "#5b82b4"],
+   :hsb [[337 85 49] [46 71 84] [213 49 71]]}
+  {:id_combo 158,
+   :id_colors [56 67 93],
+   :hex ["#f9ed43" "#c27543" "#87c540"],
+   :hsb [[56 73 98] [24 65 76] [88 68 77]]}
+  {:id_combo 159,
+   :id_colors [70 116 134],
+   :hex ["#bc892b" "#78cdd1" "#b4b0d8"],
+   :hsb [[39 77 74] [182 43 82] [245 19 85]]}
+  {:id_combo 160,
+   :id_colors [69 83 125],
+   :hex ["#c09f2c" "#71502f" "#547076"],
+   :hsb [[46 77 75] [30 58 44] [190 29 46]]}
+  {:id_combo 161,
+   :id_colors [32 45 124],
+   :hex ["#7c4225" "#eeb481" "#005b8d"],
+   :hsb [[20 70 49] [28 46 93] [201 100 55]]}
+  {:id_combo 162,
+   :id_colors [11 97 137],
+   :hex ["#d46d7a" "#8fa172" "#b884af"],
+   :hsb [[351 49 83] [83 29 63] [310 28 72]]}
+  {:id_combo 163,
+   :id_colors [57 88 123],
+   :hex ["#ffdd00" "#b5decb" "#007190"],
+   :hsb [[52 100 100] [152 18 87] [192 100 56]]}
+  {:id_combo 164,
+   :id_colors [18 61 150],
+   :hex ["#dd4127" "#fcb315" "#504087"],
+   :hsb [[9 82 87] [41 92 99] [253 53 53]]}
+  {:id_combo 165,
+   :id_colors [3 10 38],
+   :hex ["#e1b4b6" "#f27291" "#6e4145"],
+   :hsb [[356 20 88] [345 53 95] [354 41 43]]}
+  {:id_combo 166,
+   :id_colors [8 41 133],
+   :hex ["#f48067" "#fbe6a0" "#0f2e2c"],
+   :hsb [[11 58 96] [46 36 98] [176 67 18]]}
+  {:id_combo 167,
+   :id_colors [54 112 129],
+   :hex ["#c1ae92" "#a7d4e4" "#074f6f"],
+   :hsb [[36 24 76] [195 27 89] [198 94 44]]}
+  {:id_combo 168,
+   :id_colors [56 129 146],
+   :hex ["#f9ed43" "#074f6f" "#8c4c61"],
+   :hsb [[56 73 98] [198 94 44] [339 46 55]]}
+  {:id_combo 169,
+   :id_colors [2 40 157],
+   :hex ["#f8b5ba" "#ffefae" "#a1a39a"],
+   :hsb [[355 27 97] [48 32 100] [73 6 64]]}
+  {:id_combo 170,
+   :id_colors [25 61 151],
+   :hex ["#b74074" "#fcb315" "#59256a"],
+   :hsb [[333 65 72] [41 92 99] [284 65 42]]}
+  {:id_combo 171,
+   :id_colors [36 62 89],
+   :hex ["#802726" "#f99d1c" "#b4cdc2"],
+   :hsb [[1 70 50] [35 89 98] [153 12 80]]}
+  {:id_combo 172,
+   :id_colors [67 123 151],
+   :hex ["#c27543" "#007190" "#59256a"],
+   :hsb [[24 65 76] [192 100 56] [284 65 42]]}
+  {:id_combo 173,
+   :id_colors [56 85 88],
+   :hex ["#f9ed43" "#762c19" "#b5decb"],
+   :hsb [[56 73 98] [12 79 46] [152 18 87]]}
+  {:id_combo 174,
+   :id_colors [2 135 148],
+   :hex ["#f8b5ba" "#c0a8b3" "#7a4456"],
+   :hsb [[355 27 97] [332 13 75] [339 44 48]]}
+  {:id_combo 175,
+   :id_colors [45 53 143],
+   :hex ["#eeb481" "#c1c494" "#6450a1"],
+   :hsb [[28 46 93] [64 24 77] [254 50 63]]}
+  {:id_combo 176,
+   :id_colors [1 43 116],
+   :hex ["#f9c0cd" "#fdd4bd" "#78cdd1"],
+   :hsb [[345 23 98] [22 25 99] [182 43 82]]}
+  {:id_combo 177,
+   :id_colors [36 73 134],
+   :hex ["#802726" "#96874c" "#b4b0d8"],
+   :hsb [[1 70 50] [48 49 59] [245 19 85]]}
+  {:id_combo 178,
+   :id_colors [42 113 120],
+   :hex ["#ead2a2" "#a5c8d1" "#089197"],
+   :hsb [[40 31 92] [192 21 82] [182 95 59]]}
+  {:id_combo 179,
+   :id_colors [18 48 127],
+   :hex ["#dd4127" "#f3a257" "#1c4286"],
+   :hsb [[9 82 87] [29 64 95] [218 79 53]]}
+  {:id_combo 180,
+   :id_colors [46 139 155],
+   :hex ["#fdc57d" "#9a72aa" "#b6bfc1"],
+   :hsb [[34 51 99] [282 33 67] [190 6 76]]}
+  {:id_combo 181,
+   :id_colors [29 150 152],
+   :hex ["#a62c37" "#504087" "#501345"],
+   :hsb [[354 73 65] [253 53 53] [310 76 31]]}
+  {:id_combo 182,
+   :id_colors [14 87 132],
+   :hex ["#bb7125" "#4c3417" "#061330"],
+   :hsb [[30 80 73] [33 70 30] [221 88 19]]}
+  {:id_combo 183,
+   :id_colors [145 146 151],
+   :hex ["#70727c" "#8c4c61" "#59256a"],
+   :hsb [[229 10 49] [339 46 55] [284 65 42]]}
+  {:id_combo 184,
+   :id_colors [10 42 75],
+   :hex ["#f27291" "#ead2a2" "#848061"],
+   :hsb [[345 53 95] [40 31 92] [53 27 52]]}
+  {:id_combo 185,
+   :id_colors [5 19 40],
+   :hex ["#b59392" "#c55347" "#ffefae"],
+   :hsb [[2 19 71] [6 64 77] [48 32 100]]}
+  {:id_combo 186,
+   :id_colors [33 50 122],
+   :hex ["#793326" "#d8a37b" "#006eb8"],
+   :hsb [[9 69 47] [26 43 85] [204 100 72]]}
+  {:id_combo 187,
+   :id_colors [124 135 140],
+   :hex ["#005b8d" "#c0a8b3" "#a36aa5"],
+   :hsb [[201 100 55] [332 13 75] [297 36 65]]}
+  {:id_combo 188,
+   :id_colors [97 114 115],
+   :hex ["#8fa172" "#98acc8" "#96d1aa"],
+   :hsb [[83 29 63] [214 24 78] [140 28 82]]}
+  {:id_combo 189,
+   :id_colors [56 110 117],
+   :hex ["#f9ed43" "#253122" "#62c6bf"],
+   :hsb [[56 73 98] [108 31 19] [175 51 78]]}
+  {:id_combo 190,
+   :id_colors [42 66 159],
+   :hex ["#ead2a2" "#d96629" "#121315"],
+   :hsb [[40 31 92] [21 81 85] [219 14 8]]}
+  {:id_combo 191,
+   :id_colors [5 60 122],
+   :hex ["#b59392" "#e2b53f" "#006eb8"],
+   :hsb [[2 19 71] [43 72 89] [204 100 72]]}
+  {:id_combo 192,
+   :id_colors [47 87 145],
+   :hex ["#fdbe68" "#4c3417" "#70727c"],
+   :hsb [[35 59 99] [33 70 30] [229 10 49]]}
+  {:id_combo 193,
+   :id_colors [8 41 102],
+   :hex ["#f48067" "#fbe6a0" "#00918a"],
+   :hsb [[11 58 96] [46 36 98] [177 100 57]]}
+  {:id_combo 194,
+   :id_colors [16 43 121],
+   :hex ["#eb5324" "#fdd4bd" "#5b82b4"],
+   :hsb [[14 85 92] [22 25 99] [213 49 71]]}
+  {:id_combo 195,
+   :id_colors [10 40 155],
+   :hex ["#f27291" "#ffefae" "#b6bfc1"],
+   :hsb [[345 53 95] [48 32 100] [190 6 76]]}
+  {:id_combo 196,
+   :id_colors [71 112 143],
+   :hex ["#b2b73e" "#a7d4e4" "#6450a1"],
+   :hsb [[62 66 72] [195 27 89] [254 50 63]]}
+  {:id_combo 197,
+   :id_colors [9 142 155],
+   :hex ["#f38094" "#66629c" "#b6bfc1"],
+   :hsb [[349 47 95] [243 37 61] [190 6 76]]}
+  {:id_combo 198,
+   :id_colors [20 57 103],
+   :hex ["#ae5224" "#ffdd00" "#479b6e"],
+   :hsb [[20 79 68] [52 100 100] [147 54 61]]}
+  {:id_combo 199,
+   :id_colors [21 81 127],
+   :hex ["#ab544d" "#806e4b" "#1c4286"],
+   :hsb [[4 55 67] [40 41 50] [218 79 53]]}
+  {:id_combo 200,
+   :id_colors [29 53 98],
+   :hex ["#a62c37" "#c1c494" "#719470"],
+   :hsb [[354 73 65] [64 24 77] [118 24 58]]}
+  {:id_combo 201,
+   :id_colors [8 77 115],
+   :hex ["#f48067" "#837e31" "#96d1aa"],
+   :hsb [[11 58 96] [56 63 51] [140 28 82]]}
+  {:id_combo 202,
+   :id_colors [88 115 158],
+   :hex ["#b5decb" "#96d1aa" "#34444c"],
+   :hsb [[152 18 87] [140 28 82] [199 32 30]]}
+  {:id_combo 203,
+   :id_colors [40 49 108],
+   :hex ["#ffefae" "#eea78c" "#555732"],
+   :hsb [[48 32 100] [16 41 93] [63 43 34]]}
+  {:id_combo 204,
+   :id_colors [25 67 113],
+   :hex ["#b74074" "#c27543" "#a5c8d1"],
+   :hsb [[333 65 72] [24 65 76] [192 21 82]]}
+  {:id_combo 205,
+   :id_colors [36 49 150],
+   :hex ["#802726" "#eea78c" "#504087"],
+   :hsb [[1 70 50] [16 41 93] [253 53 53]]}
+  {:id_combo 206,
+   :id_colors [2 48 67],
+   :hex ["#f8b5ba" "#f3a257" "#c27543"],
+   :hsb [[355 27 97] [29 64 95] [24 65 76]]}
+  {:id_combo 207,
+   :id_colors [79 89 159],
+   :hex ["#a36752" "#b4cdc2" "#121315"],
+   :hsb [[16 50 64] [153 12 80] [219 14 8]]}
+  {:id_combo 208,
+   :id_colors [39 120 123],
+   :hex ["#f5ebc1" "#089197" "#007190"],
+   :hsb [[48 21 96] [182 95 59] [192 100 56]]}
+  {:id_combo 209,
+   :id_colors [42 62 114],
+   :hex ["#ead2a2" "#f99d1c" "#98acc8"],
+   :hsb [[40 31 92] [35 89 98] [214 24 78]]}
+  {:id_combo 210,
+   :id_colors [46 56 108],
+   :hex ["#fdc57d" "#f9ed43" "#555732"],
+   :hsb [[34 51 99] [56 73 98] [63 43 34]]}
+  {:id_combo 211,
+   :id_colors [63 94 132],
+   :hex ["#f68c50" "#a6a159" "#061330"],
+   :hsb [[22 67 96] [56 46 65] [221 88 19]]}
+  {:id_combo 212,
+   :id_colors [30 78 114],
+   :hex ["#ab2339" "#986f2d" "#98acc8"],
+   :hsb [[349 80 67] [37 70 60] [214 24 78]]}
+  {:id_combo 213,
+   :id_colors [49 57 112],
+   :hex ["#eea78c" "#ffdd00" "#a7d4e4"],
+   :hsb [[16 41 93] [52 100 100] [195 27 89]]}
+  {:id_combo 214,
+   :id_colors [42 79 150],
+   :hex ["#ead2a2" "#a36752" "#504087"],
+   :hsb [[40 31 92] [16 50 64] [253 53 53]]}
+  {:id_combo 215,
+   :id_colors [47 122 138],
+   :hex ["#fdbe68" "#006eb8" "#bf5892"],
+   :hsb [[35 59 99] [204 100 72] [325 54 75]]}
+  {:id_combo 216,
+   :id_colors [16 103 159],
+   :hex ["#eb5324" "#479b6e" "#121315"],
+   :hsb [[14 85 92] [147 54 61] [219 14 8]]}
+  {:id_combo 217,
+   :id_colors [36 50 106],
+   :hex ["#802726" "#d8a37b" "#1a7444"],
+   :hsb [[1 70 50] [26 43 85] [148 78 45]]}
+  {:id_combo 218,
+   :id_colors [124 134 145],
+   :hex ["#005b8d" "#b4b0d8" "#70727c"],
+   :hsb [[201 100 55] [245 19 85] [229 10 49]]}
+  {:id_combo 219,
+   :id_colors [16 98 126],
+   :hex ["#eb5324" "#719470" "#004f46"],
+   :hsb [[14 85 92] [118 24 58] [173 100 31]]}
+  {:id_combo 220,
+   :id_colors [26 50 140],
+   :hex ["#b71f58" "#d8a37b" "#a36aa5"],
+   :hsb [[337 83 72] [26 43 85] [297 36 65]]}
+  {:id_combo 221,
+   :id_colors [29 155 159],
+   :hex ["#a62c37" "#b6bfc1" "#121315"],
+   :hsb [[354 73 65] [190 6 76] [219 14 8]]}
+  {:id_combo 222,
+   :id_colors [60 62 68],
+   :hex ["#e2b53f" "#f99d1c" "#c16b27"],
+   :hsb [[43 72 89] [35 89 98] [26 80 76]]}
+  {:id_combo 223,
+   :id_colors [5 50 88],
+   :hex ["#b59392" "#d8a37b" "#b5decb"],
+   :hsb [[2 19 71] [26 43 85] [152 18 87]]}
+  {:id_combo 224,
+   :id_colors [10 125 148],
+   :hex ["#f27291" "#547076" "#7a4456"],
+   :hsb [[345 53 95] [190 29 46] [339 44 48]]}
+  {:id_combo 225,
+   :id_colors [23 126 147],
+   :hex ["#cc1236" "#004f46" "#704357"],
+   :hsb [[347 91 80] [173 100 31] [332 40 44]]}
+  {:id_combo 226,
+   :id_colors [38 47 150],
+   :hex ["#6e4145" "#fdbe68" "#504087"],
+   :hsb [[354 41 43] [35 59 99] [253 53 53]]}
+  {:id_combo 227,
+   :id_colors [1 113 118],
+   :hex ["#f9c0cd" "#a5c8d1" "#0093a6"],
+   :hsb [[345 23 98] [192 21 82] [186 100 65]]}
+  {:id_combo 228,
+   :id_colors [29 40 155],
+   :hex ["#a62c37" "#ffefae" "#b6bfc1"],
+   :hsb [[354 73 65] [48 32 100] [190 6 76]]}
+  {:id_combo 229,
+   :id_colors [48 110 155],
+   :hex ["#f3a257" "#253122" "#b6bfc1"],
+   :hsb [[29 64 95] [108 31 19] [190 6 76]]}
+  {:id_combo 230,
+   :id_colors [8 88 115],
+   :hex ["#f48067" "#b5decb" "#96d1aa"],
+   :hsb [[11 58 96] [152 18 87] [140 28 82]]}
+  {:id_combo 231,
+   :id_colors [3 33 121],
+   :hex ["#e1b4b6" "#793326" "#5b82b4"],
+   :hsb [[356 20 88] [9 69 47] [213 49 71]]}
+  {:id_combo 232,
+   :id_colors [23 45 132],
+   :hex ["#cc1236" "#eeb481" "#061330"],
+   :hsb [[347 91 80] [28 46 93] [221 88 19]]}
+  {:id_combo 233,
+   :id_colors [29 73 128],
+   :hex ["#a62c37" "#96874c" "#40456a"],
+   :hsb [[354 73 65] [48 49 59] [232 40 42]]}
+  {:id_combo 234,
+   :id_colors [46 83 112],
+   :hex ["#fdc57d" "#71502f" "#a7d4e4"],
+   :hsb [[34 51 99] [30 58 44] [195 27 89]]}
+  {:id_combo 235,
+   :id_colors [42 62 135],
+   :hex ["#ead2a2" "#f99d1c" "#c0a8b3"],
+   :hsb [[40 31 92] [35 89 98] [332 13 75]]}
+  {:id_combo 236,
+   :id_colors [70 127 144],
+   :hex ["#bc892b" "#1c4286" "#83565b"],
+   :hsb [[39 77 74] [218 79 53] [352 34 51]]}
+  {:id_combo 237,
+   :id_colors [29 85 114],
+   :hex ["#a62c37" "#762c19" "#98acc8"],
+   :hsb [[354 73 65] [12 79 46] [214 24 78]]}
+  {:id_combo 238,
+   :id_colors [50 152 157],
+   :hex ["#d8a37b" "#501345" "#a1a39a"],
+   :hsb [[26 43 85] [310 76 31] [73 6 64]]}
+  {:id_combo 239,
+   :id_colors [5 58 89],
+   :hex ["#b59392" "#cbb356" "#b4cdc2"],
+   :hsb [[2 19 71] [48 58 80] [153 12 80]]}
+  {:id_combo 240,
+   :id_colors [7 55 118],
+   :hex ["#f6917e" "#fff200" "#0093a6"],
+   :hsb [[9 49 96] [57 100 100] [186 100 65]]}
+  {:id_combo 241,
+   :id_colors [18 40 51 125],
+   :hex ["#dd4127" "#ffefae" "#c6a56e" "#547076"],
+   :hsb [[9 82 87] [48 32 100] [37 44 78] [190 29 46]]}
+  {:id_combo 242,
+   :id_colors [9 20 106 159],
+   :hex ["#f38094" "#ae5224" "#1a7444" "#121315"],
+   :hsb [[349 47 95] [20 79 68] [148 78 45] [219 14 8]]}
+  {:id_combo 243,
+   :id_colors [14 42 80 158],
+   :hex ["#bb7125" "#ead2a2" "#6c7140" "#34444c"],
+   :hsb [[30 80 73] [40 31 92] [66 43 44] [199 32 30]]}
+  {:id_combo 244,
+   :id_colors [5 15 96 123],
+   :hex ["#b59392" "#c56227" "#6d7e77" "#007190"],
+   :hsb [[2 19 71] [22 80 77] [155 13 49] [192 100 56]]}
+  {:id_combo 245,
+   :id_colors [29 105 130 158],
+   :hex ["#a62c37" "#819138" "#12354e" "#34444c"],
+   :hsb [[354 73 65] [71 61 57] [204 77 31] [199 32 30]]}
+  {:id_combo 246,
+   :id_colors [2 28 39 46],
+   :hex ["#f8b5ba" "#a84222" "#f5ebc1" "#fdc57d"],
+   :hsb [[355 27 97] [14 80 66] [48 21 96] [34 51 99]]}
+  {:id_combo 247,
+   :id_colors [14 57 101 127],
+   :hex ["#bb7125" "#ffdd00" "#00978c" "#1c4286"],
+   :hsb [[30 80 73] [52 100 100] [175 100 59] [218 79 53]]}
+  {:id_combo 248,
+   :id_colors [9 70 134 147],
+   :hex ["#f38094" "#bc892b" "#b4b0d8" "#704357"],
+   :hsb [[349 47 95] [39 77 74] [245 19 85] [332 40 44]]}
+  {:id_combo 249,
+   :id_colors [33 54 59 125],
+   :hex ["#793326" "#c1ae92" "#d6b43e" "#547076"],
+   :hsb [[9 69 47] [36 24 76] [46 71 84] [190 29 46]]}
+  {:id_combo 250,
+   :id_colors [58 65 100 111],
+   :hex ["#cbb356" "#f15a31" "#00b49b" "#bce4e5"],
+   :hsb [[48 58 80] [13 80 95] [171 100 71] [181 18 90]]}
+  {:id_combo 251,
+   :id_colors [31 55 106 158],
+   :hex ["#a72244" "#fff200" "#1a7444" "#34444c"],
+   :hsb [[344 80 65] [57 100 100] [148 78 45] [199 32 30]]}
+  {:id_combo 252,
+   :id_colors [13 14 69 120],
+   :hex ["#da525d" "#bb7125" "#c09f2c" "#089197"],
+   :hsb [[354 62 85] [30 80 73] [46 77 75] [182 95 59]]}
+  {:id_combo 253,
+   :id_colors [56 63 152 158],
+   :hex ["#f9ed43" "#f68c50" "#501345" "#34444c"],
+   :hsb [[56 73 98] [22 67 96] [310 76 31] [199 32 30]]}
+  {:id_combo 254,
+   :id_colors [2 39 77 136],
+   :hex ["#f8b5ba" "#f5ebc1" "#837e31" "#ca91a7"],
+   :hsb [[355 27 97] [48 21 96] [56 63 51] [336 28 79]]}
+  {:id_combo 255,
+   :id_colors [14 58 116 159],
+   :hex ["#bb7125" "#cbb356" "#78cdd1" "#121315"],
+   :hsb [[30 80 73] [48 58 80] [182 43 82] [219 14 8]]}
+  {:id_combo 256,
+   :id_colors [49 64 104 159],
+   :hex ["#eea78c" "#f47321" "#009465" "#121315"],
+   :hsb [[16 41 93] [23 86 96] [160 100 58] [219 14 8]]}
+  {:id_combo 257,
+   :id_colors [17 61 122 140],
+   :hex ["#e31f26" "#fcb315" "#006eb8" "#a36aa5"],
+   :hsb [[357 86 89] [41 92 99] [204 100 72] [297 36 65]]}
+  {:id_combo 258,
+   :id_colors [36 45 77 123],
+   :hex ["#802726" "#eeb481" "#837e31" "#007190"],
+   :hsb [[1 70 50] [28 46 93] [56 63 51] [192 100 56]]}
+  {:id_combo 259,
+   :id_colors [56 120 124 157],
+   :hex ["#f9ed43" "#089197" "#005b8d" "#a1a39a"],
+   :hsb [[56 73 98] [182 95 59] [201 100 55] [73 6 64]]}
+  {:id_combo 260,
+   :id_colors [11 49 89 100],
+   :hex ["#d46d7a" "#eea78c" "#b4cdc2" "#00b49b"],
+   :hsb [[351 49 83] [16 41 93] [153 12 80] [171 100 71]]}
+  {:id_combo 261,
+   :id_colors [31 40 116 157],
+   :hex ["#a72244" "#ffefae" "#78cdd1" "#a1a39a"],
+   :hsb [[344 80 65] [48 32 100] [182 43 82] [73 6 64]]}
+  {:id_combo 262,
+   :id_colors [13 42 72 107],
+   :hex ["#da525d" "#ead2a2" "#b09f36" "#437842"],
+   :hsb [[354 62 85] [40 31 92] [51 69 69] [119 45 47]]}
+  {:id_combo 263,
+   :id_colors [20 45 88 158],
+   :hex ["#ae5224" "#eeb481" "#b5decb" "#34444c"],
+   :hsb [[20 79 68] [28 46 93] [152 18 87] [199 32 30]]}
+  {:id_combo 264,
+   :id_colors [2 18 90 118],
+   :hex ["#f8b5ba" "#dd4127" "#b6c2a9" "#0093a6"],
+   :hsb [[355 27 97] [9 82 87] [89 13 76] [186 100 65]]}
+  {:id_combo 265,
+   :id_colors [11 57 94 131],
+   :hex ["#d46d7a" "#ffdd00" "#a6a159" "#006367"],
+   :hsb [[351 49 83] [52 100 100] [56 46 65] [182 100 40]]}
+  {:id_combo 266,
+   :id_colors [17 42 97 101],
+   :hex ["#e31f26" "#ead2a2" "#8fa172" "#00978c"],
+   :hsb [[357 86 89] [40 31 92] [83 29 63] [175 100 59]]}
+  {:id_combo 267,
+   :id_colors [47 62 101 122],
+   :hex ["#fdbe68" "#f99d1c" "#00978c" "#006eb8"],
+   :hsb [[35 59 99] [35 89 98] [175 100 59] [204 100 72]]}
+  {:id_combo 268,
+   :id_colors [5 14 110 111],
+   :hex ["#b59392" "#bb7125" "#253122" "#bce4e5"],
+   :hsb [[2 19 71] [30 80 73] [108 31 19] [181 18 90]]}
+  {:id_combo 269,
+   :id_colors [14 36 140 159],
+   :hex ["#bb7125" "#802726" "#a36aa5" "#121315"],
+   :hsb [[30 80 73] [1 70 50] [297 36 65] [219 14 8]]}
+  {:id_combo 270,
+   :id_colors [13 39 80 107],
+   :hex ["#da525d" "#f5ebc1" "#6c7140" "#437842"],
+   :hsb [[354 62 85] [48 21 96] [66 43 44] [119 45 47]]}
+  {:id_combo 271,
+   :id_colors [26 115 120 133],
+   :hex ["#b71f58" "#96d1aa" "#089197" "#0f2e2c"],
+   :hsb [[337 83 72] [140 28 82] [182 95 59] [176 67 18]]}
+  {:id_combo 272,
+   :id_colors [40 64 88 114],
+   :hex ["#ffefae" "#f47321" "#b5decb" "#98acc8"],
+   :hsb [[48 32 100] [23 86 96] [152 18 87] [214 24 78]]}
+  {:id_combo 273,
+   :id_colors [1 35 79 155],
+   :hex ["#f9c0cd" "#7e133a" "#a36752" "#b6bfc1"],
+   :hsb [[345 23 98] [337 85 49] [16 50 64] [190 6 76]]}
+  {:id_combo 274,
+   :id_colors [65 74 121 139],
+   :hex ["#f15a31" "#8b835b" "#5b82b4" "#9a72aa"],
+   :hsb [[13 80 95] [50 35 55] [213 49 71] [282 33 67]]}
+  {:id_combo 275,
+   :id_colors [19 54 85 148],
+   :hex ["#c55347" "#c1ae92" "#762c19" "#7a4456"],
+   :hsb [[6 64 77] [36 24 76] [12 79 46] [339 44 48]]}
+  {:id_combo 276,
+   :id_colors [9 43 91 159],
+   :hex ["#f38094" "#fdd4bd" "#aed472" "#121315"],
+   :hsb [[349 47 95] [22 25 99] [83 46 83] [219 14 8]]}
+  {:id_combo 277,
+   :id_colors [10 25 77 131],
+   :hex ["#f27291" "#b74074" "#837e31" "#006367"],
+   :hsb [[345 53 95] [333 65 72] [56 63 51] [182 100 40]]}
+  {:id_combo 278,
+   :id_colors [47 59 107 126],
+   :hex ["#fdbe68" "#d6b43e" "#437842" "#004f46"],
+   :hsb [[35 59 99] [46 71 84] [119 45 47] [173 100 31]]}
+  {:id_combo 279,
+   :id_colors [14 49 54 130],
+   :hex ["#bb7125" "#eea78c" "#c1ae92" "#12354e"],
+   :hsb [[30 80 73] [16 41 93] [36 24 76] [204 77 31]]}
+  {:id_combo 280,
+   :id_colors [13 108 136 148],
+   :hex ["#da525d" "#555732" "#ca91a7" "#7a4456"],
+   :hsb [[354 62 85] [63 43 34] [336 28 79] [339 44 48]]}
+  {:id_combo 281,
+   :id_colors [40 101 115 123],
+   :hex ["#ffefae" "#00978c" "#96d1aa" "#007190"],
+   :hsb [[48 32 100] [175 100 59] [140 28 82] [192 100 56]]}
+  {:id_combo 282,
+   :id_colors [13 52 115 137],
+   :hex ["#da525d" "#c59f6b" "#96d1aa" "#b884af"],
+   :hsb [[354 62 85] [35 46 77] [140 28 82] [310 28 72]]}
+  {:id_combo 283,
+   :id_colors [21 36 98 117],
+   :hex ["#ab544d" "#802726" "#719470" "#62c6bf"],
+   :hsb [[4 55 67] [1 70 50] [118 24 58] [175 51 78]]}
+  {:id_combo 284,
+   :id_colors [12 57 100 126],
+   :hex ["#e2625e" "#ffdd00" "#00b49b" "#004f46"],
+   :hsb [[2 58 89] [52 100 100] [171 100 71] [173 100 31]]}
+  {:id_combo 285,
+   :id_colors [5 20 65 88],
+   :hex ["#b59392" "#ae5224" "#f15a31" "#b5decb"],
+   :hsb [[2 19 71] [20 79 68] [13 80 95] [152 18 87]]}
+  {:id_combo 286,
+   :id_colors [20 61 119 128],
+   :hex ["#ae5224" "#fcb315" "#00939b" "#40456a"],
+   :hsb [[20 79 68] [41 92 99] [183 100 61] [232 40 42]]}
+  {:id_combo 287,
+   :id_colors [9 58 112 116],
+   :hex ["#f38094" "#cbb356" "#a7d4e4" "#78cdd1"],
+   :hsb [[349 47 95] [48 58 80] [195 27 89] [182 43 82]]}
+  {:id_combo 288,
+   :id_colors [62 84 148 159],
+   :hex ["#f99d1c" "#634b1e" "#7a4456" "#121315"],
+   :hsb [[35 89 98] [39 70 39] [339 44 48] [219 14 8]]}
+  {:id_combo 289,
+   :id_colors [56 92 128 131],
+   :hex ["#f9ed43" "#c6d150" "#40456a" "#006367"],
+   :hsb [[56 73 98] [65 62 82] [232 40 42] [182 100 40]]}
+  {:id_combo 290,
+   :id_colors [38 40 108 115],
+   :hex ["#6e4145" "#ffefae" "#555732" "#96d1aa"],
+   :hsb [[354 41 43] [48 32 100] [63 43 34] [140 28 82]]}
+  {:id_combo 291,
+   :id_colors [92 100 115 116],
+   :hex ["#c6d150" "#00b49b" "#96d1aa" "#78cdd1"],
+   :hsb [[65 62 82] [171 100 71] [140 28 82] [182 43 82]]}
+  {:id_combo 292,
+   :id_colors [40 45 51 54],
+   :hex ["#ffefae" "#eeb481" "#c6a56e" "#c1ae92"],
+   :hsb [[48 32 100] [28 46 93] [37 44 78] [36 24 76]]}
+  {:id_combo 293,
+   :id_colors [14 88 95 103],
+   :hex ["#bb7125" "#b5decb" "#709290" "#479b6e"],
+   :hsb [[30 80 73] [152 18 87] [176 23 57] [147 54 61]]}
+  {:id_combo 294,
+   :id_colors [39 47 107 114],
+   :hex ["#f5ebc1" "#fdbe68" "#437842" "#98acc8"],
+   :hsb [[48 21 96] [35 59 99] [119 45 47] [214 24 78]]}
+  {:id_combo 295,
+   :id_colors [47 55 122 131],
+   :hex ["#fdbe68" "#fff200" "#006eb8" "#006367"],
+   :hsb [[35 59 99] [57 100 100] [204 100 72] [182 100 40]]}
+  {:id_combo 296,
+   :id_colors [39 50 83 158],
+   :hex ["#f5ebc1" "#d8a37b" "#71502f" "#34444c"],
+   :hsb [[48 21 96] [26 43 85] [30 58 44] [199 32 30]]}
+  {:id_combo 297,
+   :id_colors [20 62 80 128],
+   :hex ["#ae5224" "#f99d1c" "#6c7140" "#40456a"],
+   :hsb [[20 79 68] [35 89 98] [66 43 44] [232 40 42]]}
+  {:id_combo 298,
+   :id_colors [14 56 65 159],
+   :hex ["#bb7125" "#f9ed43" "#f15a31" "#121315"],
+   :hsb [[30 80 73] [56 73 98] [13 80 95] [219 14 8]]}
+  {:id_combo 299,
+   :id_colors [24 49 105 123],
+   :hex ["#c53c69" "#eea78c" "#819138" "#007190"],
+   :hsb [[339 70 77] [16 41 93] [71 61 57] [192 100 56]]}
+  {:id_combo 300,
+   :id_colors [8 47 88 116],
+   :hex ["#f48067" "#fdbe68" "#b5decb" "#78cdd1"],
+   :hsb [[11 58 96] [35 59 99] [152 18 87] [182 43 82]]}
+  {:id_combo 301,
+   :id_colors [17 42 97 140],
+   :hex ["#e31f26" "#ead2a2" "#8fa172" "#a36aa5"],
+   :hsb [[357 86 89] [40 31 92] [83 29 63] [297 36 65]]}
+  {:id_combo 302,
+   :id_colors [47 54 111 123],
+   :hex ["#fdbe68" "#c1ae92" "#bce4e5" "#007190"],
+   :hsb [[35 59 99] [36 24 76] [181 18 90] [192 100 56]]}
+  {:id_combo 303,
+   :id_colors [41 65 110 155],
+   :hex ["#fbe6a0" "#f15a31" "#253122" "#b6bfc1"],
+   :hsb [[46 36 98] [13 80 95] [108 31 19] [190 6 76]]}
+  {:id_combo 304,
+   :id_colors [33 47 74 101],
+   :hex ["#793326" "#fdbe68" "#8b835b" "#00978c"],
+   :hsb [[9 69 47] [35 59 99] [50 35 55] [175 100 59]]}
+  {:id_combo 305,
+   :id_colors [45 57 71 88],
+   :hex ["#eeb481" "#ffdd00" "#b2b73e" "#b5decb"],
+   :hsb [[28 46 93] [52 100 100] [62 66 72] [152 18 87]]}
+  {:id_combo 306,
+   :id_colors [56 101 104 111],
+   :hex ["#f9ed43" "#00978c" "#009465" "#bce4e5"],
+   :hsb [[56 73 98] [175 100 59] [160 100 58] [181 18 90]]}
+  {:id_combo 307,
+   :id_colors [23 134 140 152],
+   :hex ["#cc1236" "#b4b0d8" "#a36aa5" "#501345"],
+   :hsb [[347 91 80] [245 19 85] [297 36 65] [310 76 31]]}
+  {:id_combo 308,
+   :id_colors [4 22 66 115],
+   :hex ["#d1b0a6" "#cc2e43" "#d96629" "#96d1aa"],
+   :hsb [[14 21 82] [351 77 80] [21 81 85] [140 28 82]]}
+  {:id_combo 309,
+   :id_colors [48 63 128 129],
+   :hex ["#f3a257" "#f68c50" "#40456a" "#074f6f"],
+   :hsb [[29 64 95] [22 67 96] [232 40 42] [198 94 44]]}
+  {:id_combo 310,
+   :id_colors [39 45 77 110],
+   :hex ["#f5ebc1" "#eeb481" "#837e31" "#253122"],
+   :hsb [[48 21 96] [28 46 93] [56 63 51] [108 31 19]]}
+  {:id_combo 311,
+   :id_colors [30 47 90 92],
+   :hex ["#ab2339" "#fdbe68" "#b6c2a9" "#c6d150"],
+   :hsb [[349 80 67] [35 59 99] [89 13 76] [65 62 82]]}
+  {:id_combo 312,
+   :id_colors [20 62 95 124],
+   :hex ["#ae5224" "#f99d1c" "#709290" "#005b8d"],
+   :hsb [[20 79 68] [35 89 98] [176 23 57] [201 100 55]]}
+  {:id_combo 313,
+   :id_colors [23 55 106 159],
+   :hex ["#cc1236" "#fff200" "#1a7444" "#121315"],
+   :hsb [[347 91 80] [57 100 100] [148 78 45] [219 14 8]]}
+  {:id_combo 314,
+   :id_colors [9 33 127 153],
+   :hex ["#f38094" "#793326" "#1c4286" "#4e1d4c"],
+   :hsb [[349 47 95] [9 69 47] [218 79 53] [302 63 31]]}
+  {:id_combo 315,
+   :id_colors [8 39 48 138],
+   :hex ["#f48067" "#f5ebc1" "#f3a257" "#bf5892"],
+   :hsb [[11 58 96] [48 21 96] [29 64 95] [325 54 75]]}
+  {:id_combo 316,
+   :id_colors [34 104 150 151],
+   :hex ["#82231e" "#009465" "#504087" "#59256a"],
+   :hsb [[3 77 51] [160 100 58] [253 53 53] [284 65 42]]}
+  {:id_combo 317,
+   :id_colors [44 54 56 88],
+   :hex ["#fcc79b" "#c1ae92" "#f9ed43" "#b5decb"],
+   :hsb [[27 38 99] [36 24 76] [56 73 98] [152 18 87]]}
+  {:id_combo 318,
+   :id_colors [81 109 126 133],
+   :hex ["#806e4b" "#42533e" "#004f46" "#0f2e2c"],
+   :hsb [[40 41 50] [108 25 33] [173 100 31] [176 67 18]]}
+  {:id_combo 319,
+   :id_colors [14 57 62 107],
+   :hex ["#bb7125" "#ffdd00" "#f99d1c" "#437842"],
+   :hsb [[30 80 73] [52 100 100] [35 89 98] [119 45 47]]}
+  {:id_combo 320,
+   :id_colors [6 39 105 113],
+   :hex ["#f58e84" "#f5ebc1" "#819138" "#a5c8d1"],
+   :hsb [[5 46 96] [48 21 96] [71 61 57] [192 21 82]]}
+  {:id_combo 321,
+   :id_colors [5 39 110 114],
+   :hex ["#b59392" "#f5ebc1" "#253122" "#98acc8"],
+   :hsb [[2 19 71] [48 21 96] [108 31 19] [214 24 78]]}
+  {:id_combo 322,
+   :id_colors [17 28 138 143],
+   :hex ["#e31f26" "#a84222" "#bf5892" "#6450a1"],
+   :hsb [[357 86 89] [14 80 66] [325 54 75] [254 50 63]]}
+  {:id_combo 323,
+   :id_colors [46 71 85 159],
+   :hex ["#fdc57d" "#b2b73e" "#762c19" "#121315"],
+   :hsb [[34 51 99] [62 66 72] [12 79 46] [219 14 8]]}
+  {:id_combo 324,
+   :id_colors [30 121 140 155],
+   :hex ["#ab2339" "#5b82b4" "#a36aa5" "#b6bfc1"],
+   :hsb [[349 80 67] [213 49 71] [297 36 65] [190 6 76]]}
+  {:id_combo 325,
+   :id_colors [13 41 60 133],
+   :hex ["#da525d" "#fbe6a0" "#e2b53f" "#0f2e2c"],
+   :hsb [[354 62 85] [46 36 98] [43 72 89] [176 67 18]]}
+  {:id_combo 326,
+   :id_colors [39 65 91 93],
+   :hex ["#f5ebc1" "#f15a31" "#aed472" "#87c540"],
+   :hsb [[48 21 96] [13 80 95] [83 46 83] [88 68 77]]}
+  {:id_combo 327,
+   :id_colors [9 14 54 135],
+   :hex ["#f38094" "#bb7125" "#c1ae92" "#c0a8b3"],
+   :hsb [[349 47 95] [30 80 73] [36 24 76] [332 13 75]]}
+  {:id_combo 328,
+   :id_colors [28 63 87 102],
+   :hex ["#a84222" "#f68c50" "#4c3417" "#00918a"],
+   :hsb [[14 80 66] [22 67 96] [33 70 30] [177 100 57]]}
+  {:id_combo 329,
+   :id_colors [47 135 152 158],
+   :hex ["#fdbe68" "#c0a8b3" "#501345" "#34444c"],
+   :hsb [[35 59 99] [332 13 75] [310 76 31] [199 32 30]]}
+  {:id_combo 330,
+   :id_colors [53 111 114 120],
+   :hex ["#c1c494" "#bce4e5" "#98acc8" "#089197"],
+   :hsb [[64 24 77] [181 18 90] [214 24 78] [182 95 59]]}
+  {:id_combo 331,
+   :id_colors [24 131 139 150],
+   :hex ["#c53c69" "#006367" "#9a72aa" "#504087"],
+   :hsb [[339 70 77] [182 100 40] [282 33 67] [253 53 53]]}
+  {:id_combo 332,
+   :id_colors [6 22 110 126],
+   :hex ["#f58e84" "#cc2e43" "#253122" "#004f46"],
+   :hsb [[5 46 96] [351 77 80] [108 31 19] [173 100 31]]}
+  {:id_combo 333,
+   :id_colors [20 56 115 122],
+   :hex ["#ae5224" "#f9ed43" "#96d1aa" "#006eb8"],
+   :hsb [[20 79 68] [56 73 98] [140 28 82] [204 100 72]]}
+  {:id_combo 334,
+   :id_colors [43 77 91 123],
+   :hex ["#fdd4bd" "#837e31" "#aed472" "#007190"],
+   :hsb [[22 25 99] [56 63 51] [83 46 83] [192 100 56]]}
+  {:id_combo 335,
+   :id_colors [34 62 150 158],
+   :hex ["#82231e" "#f99d1c" "#504087" "#34444c"],
+   :hsb [[3 77 51] [35 89 98] [253 53 53] [199 32 30]]}
+  {:id_combo 336,
+   :id_colors [9 33 40 109],
+   :hex ["#f38094" "#793326" "#ffefae" "#42533e"],
+   :hsb [[349 47 95] [9 69 47] [48 32 100] [108 25 33]]}
+  {:id_combo 337,
+   :id_colors [38 136 149 159],
+   :hex ["#6e4145" "#ca91a7" "#713b4c" "#121315"],
+   :hsb [[354 41 43] [336 28 79] [340 48 44] [219 14 8]]}
+  {:id_combo 338,
+   :id_colors [29 61 126 135],
+   :hex ["#a62c37" "#fcb315" "#004f46" "#c0a8b3"],
+   :hsb [[354 73 65] [41 92 99] [173 100 31] [332 13 75]]}
+  {:id_combo 339,
+   :id_colors [50 66 113 128],
+   :hex ["#d8a37b" "#d96629" "#a5c8d1" "#40456a"],
+   :hsb [[26 43 85] [21 81 85] [192 21 82] [232 40 42]]}
+  {:id_combo 340,
+   :id_colors [65 100 155 159],
+   :hex ["#f15a31" "#00b49b" "#b6bfc1" "#121315"],
+   :hsb [[13 80 95] [171 100 71] [190 6 76] [219 14 8]]}
+  {:id_combo 341,
+   :id_colors [8 107 110 113],
+   :hex ["#f48067" "#437842" "#253122" "#a5c8d1"],
+   :hsb [[11 58 96] [119 45 47] [108 31 19] [192 21 82]]}
+  {:id_combo 342,
+   :id_colors [2 47 78 110],
+   :hex ["#f8b5ba" "#fdbe68" "#986f2d" "#253122"],
+   :hsb [[355 27 97] [35 59 99] [37 70 60] [108 31 19]]}
+  {:id_combo 343,
+   :id_colors [20 42 82 129],
+   :hex ["#ae5224" "#ead2a2" "#635a3a" "#074f6f"],
+   :hsb [[20 79 68] [40 31 92] [47 41 39] [198 94 44]]}
+  {:id_combo 344,
+   :id_colors [46 127 140 159],
+   :hex ["#fdc57d" "#1c4286" "#a36aa5" "#121315"],
+   :hsb [[34 51 99] [218 79 53] [297 36 65] [219 14 8]]}
+  {:id_combo 345,
+   :id_colors [33 111 117 143],
+   :hex ["#793326" "#bce4e5" "#62c6bf" "#6450a1"],
+   :hsb [[9 69 47] [181 18 90] [175 51 78] [254 50 63]]}
+  {:id_combo 346,
+   :id_colors [25 88 92 96],
+   :hex ["#b74074" "#b5decb" "#c6d150" "#6d7e77"],
+   :hsb [[333 65 72] [152 18 87] [65 62 82] [155 13 49]]}
+  {:id_combo 347,
+   :id_colors [94 100 124 137],
+   :hex ["#a6a159" "#00b49b" "#005b8d" "#b884af"],
+   :hsb [[56 46 65] [171 100 71] [201 100 55] [310 28 72]]}
+  {:id_combo 348,
+   :id_colors [53 107 110 152],
+   :hex ["#c1c494" "#437842" "#253122" "#501345"],
+   :hsb [[64 24 77] [119 45 47] [108 31 19] [310 76 31]]})}
