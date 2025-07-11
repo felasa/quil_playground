@@ -5,8 +5,8 @@
             [clojure.data.json :as json]))
 
 (def sanzo (clojure.edn/read-string (slurp "resources/sanzo-colors.edn")))
-(def combos (->> (sanzo "combos")
-                 (filter #(= (count (get % "id_colors")) 4))))
+(def combos (->> (sanzo :combos)
+                 (filter #(= (count (get % :id_colors)) 4))))
 (defn flow-curve
   "Returns the coords that make a path with a flow field. No drawing is done"
   [field-fn n-steps step-len start-x start-y]
@@ -129,7 +129,7 @@
 
 (defn draw-bands
   [n-bands pallete]
-  (let [hsb-vals (shuffle (get pallete "hsb"))
+  (let [hsb-vals (shuffle (get pallete :hsb))
         bg (hsb-vals 0)]
     (apply q/background bg)
     (q/stroke (bg 0) (bg 1) (+ 2 (bg 2)))
