@@ -49,51 +49,63 @@
   [path]
   (conj (vec path) (first path)))
 
+(defn blob 
+  [scale position mutations stds annealing]
+  (let [ini-shape (close-path (n-gon scale 8))]
+    (map #(map + % position) (mutate-path mutations annealing stds ini-shape))))
+
 (comment 
   (mutate-segment :a [0 0] [1 1])
   (doseq [pt (n-gon 100 3)]
     (println pt)))
+
+(defn masking-test [layers]
+  (let [mask-layer (q/create-graphics (q/width) (q/height))
+        shape-layer (q/create-graphics (q/width) (q/height))]
+    (dotimes [i layers]
+      (q/with-graphics mask-layer
+        (q/clear)
+        (q/background 255 0)
+        (q/no-stroke)
+        (q/fill 0 0 255 4)
+        (dotimes [i 100]
+          (q/ellipse (rand-int (q/width)) (rand-int (q/height)) 100 90)))
+      (q/with-graphics shape-layer 
+        (q/clear)
+        (q/background 250 0)
+        (q/no-stroke)
+        (q/fill 128 12 12)
+        (q/begin-shape)
+        (doseq [;pt (mutate-path 4 0.8 [20 25 30 40 50 60 70 80] (close-path (n-gon 400 8)))
+                pt (blob 400 [400 400] 4 [20 25 30 40 50 60 70 80] 0.7)]
+          (apply q/vertex pt))
+        (q/end-shape)
+        (q/mask-image mask-layer))
+      (q/blend shape-layer 0 0 800 800 0 0 800 800 :darkest))))
+
 (comment 
   (declare testing-sketch)
   (q/defsketch testing-sketch
     :setup (fn [] (q/no-loop))
-    :draw (fn []
-            (q/no-stroke)
-            (q/translate 400 400)
-            (q/fill 100 0 100 8)
-            (dotimes [i 40]
-              (q/begin-shape)
-              (doseq [pt (mutate-path 4 0.8 [20 25 30 40 50 60 70 80] (close-path (n-gon 400 8)))]
-                (apply q/vertex pt))
-              (q/end-shape))
-            (q/begin-shape)
-            (q/fill 0 200 0 0)
-            (doseq [pt (close-path (n-gon 400 8))]
-              (apply q/vertex pt))
-            (q/end-shape))
-    :bg-color 50
+    :draw (partial masking-test 200)
+    :draw-not (fn []
+                (q/no-stroke)
+                (q/fill 100 0 100 80)
+                (dotimes [i 1]
+                  (q/begin-shape)
+                  (doseq [;pt (mutate-path 4 0.8 [20 25 30 40 50 60 70 80] (close-path (n-gon 400 8)))
+                          pt (blob 400 [400 400] 4 [20 25 30 40 50 60 70 80] 0.7)]
+                    (apply q/vertex pt))
+                  (q/end-shape))
+                (q/begin-shape)
+                (q/fill 0 200 0 100)
+                (q/translate 400 400)
+                (doseq [pt (close-path (n-gon 400 8))]
+                  (apply q/vertex pt))
+                (q/end-shape))
     :size [800 800]
     :renderer :java2d))
 
 (comment 
   (quil.applet/with-applet
-    dev.mutations/testing-sketch
-    ;(mutate-segment 4 [0 0] [1 1])
-    (mutate-path 2  [0.01 0.02 0.03] [[0 0] [1 1] [2 2] [3 3] [0 0]]) ;; [0 0]
-    ;(mutate-path [50 60 100] (close-path (n-gon 400 3)))
-;; [[0 0] [0.4973365849256515 0.5040589639544487] [1 1] [1.5298498034477235 1.5326583456993104]
-;;  [2 2] [2.512829790711403 2.4952260667085646] [3 3] [1.4833810102939606 1.5063845378160476]
-;;  [0 0]]
-    #_(do (q/begin-shape)
-          (doseq [ptx (partition 2 (poly/n-gon 3))]
-            (apply q/vertex ptx))
-          (q/end-shape))))
-;; [[0 0]
-;;  (0.5047583442926407 0.5090721398591995)
-;;  [1 1]
-;;  (1.522718858718872 1.4930974918603896)
-;;  [2 2]
-;;  (2.4479117155075074 2.434350094795227)
-;;  [3 3]
-;;  (1.487816082239151 1.5050051808357239)
-;;  [0 0]]
+    dev.mutations/testing-sketch))
