@@ -4,6 +4,7 @@
             [clojure.data.json :as json]
             [clojure.java.shell :refer [sh]]))
 
+;; TO DO: refactor drawing fun
 (def combos ((json/read-str (slurp "resources/sanzo-colors.json")) "combos"))
 (defn perlin-noise3
   [scale]
@@ -46,7 +47,8 @@
 (q/defsketch wind
   :title "Wind"
   :settings #(q/smooth 8)
-  :setup (fn [] (q/frame-rate 24) (q/noise-detail 4 0.5)
+  :setup (fn [] (q/frame-rate 24) (q/noise-detail 8 0.5)
+                ;todo: move defs to q/state
                 (def id (subs (str (random-uuid)) 0 8))
                 (def seeds [(System/currentTimeMillis) (System/currentTimeMillis)])
                 (def pal (->> combos (filter #(= 3 (count (% "id_colors")))) 
@@ -60,8 +62,9 @@
                 (def yss0 (vec (for [i (range 200)] (rand-int (q/height)))))
                 (def xss1 (vec (for [i (range 100)] (rand-int (q/width)))))
                 (def yss1 (vec (for [i (range 100)] (rand-int (q/height))))))
+  ;:size :fullscreen
   :size [800 800]
-  :renderer :opengl
+  :renderer :java2d
   ;not working
   ;:on-close 
   #_(sh "ffmpeg" 
@@ -93,6 +96,6 @@
               (perlin-field3 0.01)
               200
               5
-              (xss1 i) (yss1 i) (* 0.3 (q/frame-count))))
-           (q/save-frame (str "out/animations/" id "/wind-#####.png"))))
+              (xss1 i) (yss1 i) (* 0.3 (q/frame-count))))))
+           ;(q/save-frame (str "out/animations/" id "/wind-#####.png"))))
 

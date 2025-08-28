@@ -1,6 +1,7 @@
 (ns roulettes.cylocycloid
   (:require [quil.core :as q]
-            [clojure.math :as math :refer [PI]]))
+            [quil.applet]
+            [clojure.math :as math])) 
 
 (defn cyclocycloid [R r d t]
   (let [Rr (+ R r) qr (/ Rr r)]
@@ -16,7 +17,7 @@
   (q/no-loop)
   (q/translate (/ (q/width) 2) (/ (q/height) 2))
   (q/color-mode :hsb 360 1 1 1)  
-  ;; TODO: Figure out the period
+  ;; TODO: Figure out the period to generatic static image with complete cycle
   (dotimes [i (inc (/ (* 3 (+ (numerator (clojure.lang.Numbers/toRatio (/ R (abs r))))
                               (denominator (clojure.lang.Numbers/toRatio (/ R (abs r))))))
                      step))] 
@@ -62,9 +63,10 @@
      :size [1000 1000])))
 
 (comment 
-  (let [r 50 R (* (abs r) (/ 301 105)) d 0.8] 
+  (let [r 50 R (* (abs r) (/ 301 175)) d 0.8] 
     (sketch-cyclocycloid R r (* d r) 0.1))
   (sketch-cyclocycloid 180 60 60 0.1)
+  (declare example)
   (q/defsketch example
    :title "Spirograph"
    :settings #(q/smooth 2)

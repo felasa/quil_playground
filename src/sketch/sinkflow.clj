@@ -36,7 +36,7 @@
   (q/background 50)
   (q/noise-seed (System/nanoTime))
   (q/stroke 250)
-  (dotimes [i 500]
+  (dotimes [_ 500]
     ;(apply q/stroke (rand-nth pallete))
     (draw-curve-with-field 
       (fields/avg-fields 
@@ -50,7 +50,7 @@
          (let [d (q/dist x y (* (q/width) (/ 3 4)) (* (q/height) (/ 3 4)))] 
            (->> [x y]
                 (map - [(* (q/width) (/ 3 4)) (* (q/height) (/ 3 4))])
-                (map #(* (/ d) 3 %))))))   
+                (map #(* (/ d) 10 %))))))   
       q/line
       200
       5

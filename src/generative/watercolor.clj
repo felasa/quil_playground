@@ -2,21 +2,18 @@
   "Tries to implement https://www.tylerxhobbs.com/words/a-guide-to-simulating-watercolor-paint-with-generative-art"
   (:require 
       [quil.core :as q]
-;      [clojure.math :as math]
-;      [clojure.data.json :as json]
       [shapes.polygons :as poly]
       [util.transform :as util]))
 
 (defn blob
   [mutations scale std annealing]
   (let [base-path (poly/n-gon scale 8)
-        path (into base-path (take 2 base-path))]
-    (loop [
-           return path
+        path (poly/close-path base-path)]
+    (loop [return path
            mutated 0
            std std]
       (if (<= mutated mutations)
-        (recur (util/mutate-path-v std return)
+        (recur (util/mutate-path std return)
                (inc mutated)
                (* std annealing))
         return))))
@@ -24,16 +21,39 @@
 (defn draw-blob
   ;mut 4-6
   [scale mutations layers color position]
+  (q/no-stroke)
   (q/stroke-weight 0)
   (apply q/translate position)
   (apply q/fill color) 
   (dotimes [i layers]
     (let [shape (blob mutations scale 30 0.7)]
       (q/begin-shape)
-      (doseq [vxs (partition 2 shape)]
+      (doseq [vxs shape]
         (apply q/vertex vxs))
       (q/end-shape)))
   (apply q/translate (map - position)))
+
+(defn draw-textured-blob
+  [scale mutations layers color position]
+  (let [texture-layer (q/create-graphics (q/width) (q/height))
+        blob-layer (q/create-graphics (q/width) (q/height))]
+    (dotimes [_ layers]
+      (q/with-graphics blob-layer 
+        (q/clear)
+        ;(q/background 255 0 0 0)
+        (draw-blob scale mutations 1 [0 0 255 8] position))
+      (q/with-graphics texture-layer 
+        (q/clear)
+        (q/background 250 0)
+        (q/stroke-weight 0)
+        (q/no-stroke)
+        (apply q/fill (conj color 4))
+        (dotimes [_ 50]
+          (q/ellipse (rand-int (q/width)) (rand-int (q/height)) 80 80))
+        (q/mask-image blob-layer))
+      ;(q/with-graphics final-layer
+      (q/blend texture-layer 0 0 (q/width) (q/height) 0 0 (q/width) (q/height) :darkest))))
+      ;(q/image final-layer 0 0))))
 
 (defn draw []
   ;(q/background 200)
@@ -52,18 +72,20 @@
   (draw-blob 240 5 15 [255 128 100 8] [200 250]))
 
 (defn setup []
-  (q/no-loop))
+  (q/no-loop)
+  (q/background 250 0))
 
-(comment 
- (q/defsketch sketch
-   :title "Watercolor"
-   :display 1
-   :settings #(q/smooth)
-   :setup setup
-   :draw #(draw);blob-mask;#(draw-splat 50 5) 
-   :size [800 600]
-   :features [:resizable]
-   :renderer :java2d))
+(declare wcsketch)
+(q/defsketch wcsketch
+  :title "Watercolor"
+  :display 1
+  :settings #(q/smooth)
+  :setup setup
+  :draw #(draw);blob-mask;#(draw-splat 50 5) 
+  ;:draw #(draw-textured-blob 200 3 100 [255 10 10] [400 300])
+  :size [800 600]
+  :features [:resizable]
+  :renderer :p2d)
 
 (comment 
   (quil.applet/with-applet

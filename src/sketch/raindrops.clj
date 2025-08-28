@@ -1,23 +1,25 @@
-(ns generative.raindrops
+(ns sketch.raindrops
   (:require [quil.core :as q]
             [clojure.math :as math]
-            [util.core :refer [local-context]]))
+            [util.misc :refer [local-context]]))
 
+;; should be args to a fn
 (def params 
-  (let [Width 1000
-        Height 1000
-        resolution-factor 0.01
-        left-x (* Width -0.5)
-        right-x (* Width 1.5)
-        top-y (* Height -0.5)
-        bottom-y (* Height 1.5)
-        resolution (* Width resolution-factor)
-        num-cols (/ (- right-x left-x) resolution)
-        num-rows (/ (- bottom-y top-y) resolution)
-        perlin-scale 0.005
-        lc (local-context)]
-    (update-keys lc keyword)))
+ (let [Width 1000
+       Height 1000
+       resolution-factor 0.01
+       left-x (* Width -0.5)
+       right-x (* Width 1.5)
+       top-y (* Height -0.5)
+       bottom-y (* Height 1.5)
+       resolution (* Width resolution-factor)
+       num-cols (/ (- right-x left-x) resolution)
+       num-rows (/ (- bottom-y top-y) resolution)
+       perlin-scale 0.005
+       lc (local-context)]
+   (update-keys lc keyword)))
     
+;; TODO: Replace with field-fns
 (defn perlin-noise 
   [col row scale]
   ;(. papp noise (* scale col) (* scale row))))
@@ -56,14 +58,10 @@
 (def pallete [[0xff 0xef 0xb0 0xff] [0xc7 0x5c 0x52 0xff] [0xb7 0x96 0x96 0xff]])
 
 (defn setup []
-  (q/frame-rate 8)
   (q/background 50)
-  ;(q/stroke 0)
   (q/stroke-weight 1)
-  (q/stroke-cap :round))
-  ;(doseq [n (range 0 500)]
-  ;  (perlin-curve))
-  ;(q/no-loop))
+  (q/stroke-cap :round)
+  (q/no-loop))
 
 (defn iterate-drawing
   [times]
@@ -71,23 +69,20 @@
     (apply q/stroke (rand-nth pallete))
     (draw-curve-with-field 
       (rand-int (:right-x params)) (rand-int (:bottom-y params))
-      50 6 perlin-field 20))
-  ;(q/save "test.png")
-  (q/no-loop))
+      50 6 perlin-field 20)))
 
-(comment 
-  (q/defsketch example
-    :title "Rain"
-    :display 1
-    :settings #(q/smooth 32)
-    :setup setup
-    :draw #(iterate-drawing 200)
-    :bg-color 50
-    :size [1024 800]
-    ;:features [:exit-on-close]))
-    :renderer :java2d))
+(declare example)
+(q/defsketch example
+  :title "Rain"
+  :display 1
+  :settings #(q/smooth 32)
+  :setup setup
+  :draw #(iterate-drawing 200)
+  :bg-color 50
+  :size [1024 800]
+  :renderer :java2d)
 
 (comment 
   (quil.applet/with-applet
-    generative.raindrops/example 
+    sketch.raindrops/example 
     (q/save (str "out/raindrops_" (subs (str (random-uuid)) 0 5) ".png")))) ;

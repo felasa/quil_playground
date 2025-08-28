@@ -1,6 +1,7 @@
 ;; Credit: @XoDev https://x.com/XorDev/status/1897042877626421642
-(ns misc.blackhole
+(ns sketch.blackhole
   (:require [quil.core :as q]
+            [quil.applet]
             [clojure.math :as math]))
 
 (defn bh-intensity [W H x y]
@@ -29,24 +30,20 @@
       (q/set-pixel (- H y) x 
                    ;(q/color I) 
                    (q/color (+ 180 (math/to-degrees (math/atan2 y' x'))) 1 (* i i)))))) 
-  ;(q/save "out/horizon.png"))
 
-(def W 800)
-(def H 800)
-
-(comment 
-  (q/defsketch bh
-    :title "BH"
-    :display 1
-    :settings #(q/smooth 8)
-    :setup setup
-    :draw #(draw-bh W W)
-    :bg-color 0
-    :size [W H]
-    :features [:resizable]
-    :renderer :opengl)) ;:java2d))
+(declare bh)
+(q/defsketch bh
+  :title "BH"
+  :display 1
+  :settings #(q/smooth 8)
+  :setup setup
+  :draw #(draw-bh 800 800)
+  :bg-color 0
+  :size [800 800]
+  :features [:resizable]
+  :renderer :opengl) ;:java2d))
 
 (comment 
   (quil.applet/with-applet
-    misc.blackhole/bh 
+    sketch.blackhole/bh 
     (q/save "out/horizon_hsv_hard.png"))) ;
