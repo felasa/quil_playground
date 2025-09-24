@@ -57,12 +57,15 @@
             corner-y (case (mod i 4) 0 (- (/ (q/height) 2)) 1 (- (/ (q/height) 2)) 2 (/ (q/height) 2) 3 (/ (q/height) 2))]
         ;(q/stroke-weight 3)
         (apply q/stroke (conj (nth (q/state :fills) i)))
+        ;; fill shape or not
         (if (< (rand) 0.2) (q/no-fill) (apply q/fill (nth (q/state :fills) i)))
         ;(q/text-size 20)
         ;(q/text (rand-nth letters) x y)
         (q/push-matrix)
+        ;;ratet how?
         (q/rotate ang) 
         ;(q/rotate (* (rand) q/QUARTER-PI 0.0))
+        ;; circle or square
         (if (< (rand) 0.5) (q/rect x y (* 2 sz) (* 2 sz)) (q/ellipse x y sz sz))
         (q/pop-matrix)))))
         ;(when (> (rand) 0.2) (q/ellipse x y sz sz))))))
