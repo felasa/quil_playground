@@ -117,26 +117,35 @@
                          :width 10 :generation 1})]
           (draw-branch branches))))
     (q/with-graphics texture-layer 
-      (q/background 255 0)
-      (blb/draw-blob 600 4 30 [255 1] [400 400]))
+      (q/no-stroke)
+      (q/fill 255 4)
+      ;(q/background 255 0)
+      ;(blb/draw-blob 800 4 7 [255 1] [400 400])
+      (dotimes [i 1600]
+       (q/ellipse (rand-int 800) (rand-int 800)
+                  80 80)))
     (q/with-graphics shpl
       (q/background 255 0)
-      (q/fill 46 27 40)
-      (q/rect 100 100 300 300))
+      (q/fill 0 255 0)
+      (q/rect-mode :center)
+      (q/rect 400 400 300 300))
     (q/with-graphics mskl 
-      (q/background 255 0)
-      (q/fill 255)
-      (q/rect 150 150 200 200))
+      (q/background 0 0)
+      (q/fill 0)
+      (q/ellipse 400 400 400 400))
+    ;(q/image shpl 0 0)))
     ;(q/image mskl 0 0)))
     ;(q/image texture-layer 0 0)))
-    (msk/mask-w-alpha shpl mskl)))
+    ;(msk/mask-w-alpha shpl mskl)))
+    (msk/mask-w-alpha texture-layer branch-layer)
+    (q/image texture-layer 0 0)))
   
 (q/defsketch sketch
   :size [800 800]
   :settings #(q/smooth)
   :setup (fn [] (q/no-loop) 
            (q/color-mode :hsb 359 100 100 1.0)
-           (q/background 250))
+           (q/background 50))
   :renderer :java2d        
   :draw draw-fn
   :drawa #(do 
