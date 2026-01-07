@@ -1,7 +1,10 @@
 (ns sketch.lqdyq
   (:require [quil.core :as q]
+            [dev.field-testing :as dev]
             [shapes.blobs :as blobs]
-            [generative.watercolor :as blb]
+            [util.curve :as curve]
+            [util.fields :as fields]
+            ;[generative.watercolor :as blb]
             [util.masking :as msk]))
 
 (declare sketch)
@@ -67,8 +70,8 @@
         (if end? 
           (do 
             (q/ellipse (position 0) (position 1)
-                       (* 2 width)
-                       (* 2 width))
+                       (* 2 (- width 3))
+                       (* 2 (- width 3)))
             (recur (rest rem)))
           (do 
             (q/line position
@@ -97,16 +100,26 @@
 (defn draw-fn []
   (let [branch-layer (q/create-graphics 800 800)
         texture-layer (q/create-graphics 800 800)
+        field-layer (q/create-graphics 800 800)
         shpl (q/create-graphics 800 800) mskl (q/create-graphics 800 800)]
+    (q/with-graphics field-layer 
+      (q/color-mode :hsb 359 100 100 1)
+      (q/stroke-weight 10)
+      (doseq [x (range 0 900 100) y (range 0 900 100)]
+        (if (< (rand) 0.5) (q/stroke 305 55 39 0.1) (q/stroke 42 72 89 0.1))
+        (curve/draw-curve 
+          (curve/field-curve (fields/perlin-field 0.001)
+                             100 1 [x y]))))
     (q/with-graphics branch-layer 
+      (q/stroke-cap :project)
       (q/background 255 0)
       (q/color-mode :hsb 359 100 100 1.0)
       (q/stroke 0 0 0)
       (q/fill 0 0 0)
       ;(q/stroke 40 31 92) 
       ;(q/fill 40 31 92) 
-      (dotimes [theta 10] 
-        (let [R 90 angle (+ theta  (/ q/TWO-PI 10))
+      (dotimes [theta 20] 
+        (let [R 90 angle (* theta  (/ q/TWO-PI 20))
               dx (* R (q/cos angle)) 
               dy (* R (q/sin angle))
               position (mapv + [dx dy] [400 400])
@@ -118,7 +131,7 @@
           (draw-branch branches))))
     (q/with-graphics texture-layer 
       (q/no-stroke)
-      (q/fill 255 4)
+      (q/fill 255 8)
       ;(q/background 255 0)
       ;(blb/draw-blob 800 4 7 [255 1] [400 400])
       (dotimes [i 1600]
@@ -137,6 +150,7 @@
     ;(q/image mskl 0 0)))
     ;(q/image texture-layer 0 0)))
     ;(msk/mask-w-alpha shpl mskl)))
+    (q/image field-layer 0 0)
     (msk/mask-w-alpha texture-layer branch-layer)
     (q/image texture-layer 0 0)))
   
@@ -151,8 +165,8 @@
   :drawa #(do 
             (q/color-mode :hsb 359 100 100 1.0)
             ;(blb/draw-blob 600 5 30 [305 55 39 0.1] [400 400])
-            (dotimes [theta 10] 
-              (let [R 90 angle (+ theta  (/ q/TWO-PI 10))
+            (dotimes [theta 20] 
+              (let [R 90 angle (* theta  (/ q/TWO-PI 20))
                     dx (* R (q/cos angle)) 
                     dy (* R (q/sin angle))
                     position (mapv + [dx dy] [400 400])
