@@ -123,11 +123,12 @@
                           (take spawn-rate)))
         distances 
         (->> (auxin-distances auxins veins)
+             ;#((update-vals % (fn [m] (remove (fn [e] (zero? (val e))) m))))
              (filter (fn [kv] (every? #(> % R-exclusion) (vals (val kv)))))
              (reduce into)
              (apply hash-map))
         filtered (keys distances)
-        assigned (update-vals distances  min-by-val)
+        assigned (update-vals distances min-by-val)
         directions (update-vals
                      (->> (group-by #(assigned %) (keys assigned))
                           (map (fn [kv] (hash-map (key kv) (mapv (fn [p] (v-dif p (key kv))) (val kv))))) 
@@ -137,39 +138,7 @@
                 (map (fn [kv] {(mapv long (mapv + (key kv) (val kv))) (key kv)}))
                 (into veins))
         return {:auxins filtered :veins nv}]
-    ;filtered))
-    ;distances))
-    ;assigned
-    ;directions))
-    ;nv))
-    return))
-
-(defn v-step-grow 
-  "Same as above but returns veins as a vector no a map"
-  [R-exclusion segment-len spawn-rate state]
-  (let [{:keys [auxins veins]} state
-        auxins (into auxins 
-                     (->> (fn [] (vector (rand-int 800) (rand-int 800)))
-                          (repeatedly)
-                          ;(remove #(or (> (sq-dist % [400 400]) 300)))
-                                       ;(> (sq-dist % [0 400])   500)))
-                          (take spawn-rate)))
-        distances 
-        (->> (auxin-distances auxins veins)
-             (filter (fn [kv] (every? #(> % R-exclusion) (vals (val kv)))))
-             (reduce into)
-             (apply hash-map))
-        filtered (keys distances)
-        assigned (update-vals distances  min-by-val)
-        directions (update-vals
-                     (->> (group-by #(assigned %) (keys assigned))
-                          (map (fn [kv] (hash-map (key kv) (mapv (fn [p] (v-dif p (key kv))) (val kv))))) 
-                          (reduce conj))
-                     (fn [coll] (mapv #(* segment-len %) (normalize (reduce v-sum coll)))))
-        nv (->> directions 
-                (map (fn [kv] {(mapv long (mapv + (key kv) (val kv))) (key kv)}))
-                (into veins))
-        return {:auxins filtered :veins nv}]
+    ;auxins))
     ;filtered))
     ;distances))
     ;assigned
@@ -203,13 +172,9 @@
 
 (def parametrized (partial step-grow 45 25 5))
 (parametrized (parametrized {:auxins [] :veins ex-veins}))
-
+(parametrized {:auxins [] :veins ex-veins})
 (defn gen-veins [iters state]
-  (loop [iter 1
-         state state]  
-    (if (< iter iters)
-      (recur (inc iter) (parametrized state))
-      state)))
+  (loop [iter 1 state state]  (if (< iter iters) (recur (inc iter) (parametrized state)) state)))
 
 (parametrized {:auxins ex-auxins :veins ex-veins})
 
@@ -288,37 +253,38 @@
   ;;   si se dibuja el relleno de cada circulo
   :setup (fn [] (q/no-loop))
   :size [800 800]
-  :draw (fn [] 
-          (q/no-fill)  
-          (q/color-mode :rgb 255 255 255 1)
-          (let [veins (:veins (gen-veins 100 {:auxins [] :veins {[(+ 300 (rand-int 200)) (+ 300 (rand-int 200))] nil}})) 
-                pal (shuffle (palette-fn))
-                bg (pal 0)
-                fg1 (pal 1)
-                fg2 (pal 2)]
-            (apply q/background bg)
-            ;(q/no-stroke)
-            ;(apply q/fill bg)
-            ;(q/rect 30 30 745 745)
-            ;(apply q/stroke fg1)
-            ;(doseq [x (range 800) y (range 800)] (when (< (rand) 0.005) (q/set-pixel x y (q/color 0 0 0))))
-            (doseq [e veins]
-              (let [[orig dest] e]       ;i (range (count veins))]
-                ;(q/stroke-weight 2))))) 
-                ;(q/line (key e) (val e))))))
-                ;(q/line (key (nth veins i)) (val (nth veins i)))))))
-                (when (and (< (rand) 0.2) dest) (q/line orig dest)) 
-                (if (< (rand) 0.1) (apply q/stroke fg2) (apply q/stroke fg1))
-                (when (< (rand) 0.6) 
-                  (when (< (rand) 0.15) (apply q/fill fg2))
-                  (q/ellipse (orig 0) (orig 1) 22 22) 
-                  (q/no-fill))
-                (if (< (rand) 0.1) (apply q/stroke fg2) (apply q/stroke fg1))
-                (when (< (rand) 0.5) (q/ellipse (orig 0) (orig 1) 18 18)) 
-                (if (< (rand) 0.1) (apply q/stroke fg2) (apply q/stroke fg1))
-                (when (< (rand) 0.5) (q/ellipse (orig 0) (orig 1) 12 12)) 
-                (if (< (rand) 0.1) (apply q/stroke fg2) (apply q/stroke fg1))
-                (when (< (rand) 0.7) (q/ellipse (orig 0) (orig 1) 6 6))))))) 
+  :drawa (fn [] 
+           (q/no-fill)  
+           (q/color-mode :rgb 255 255 255 1)
+           (let [veins (:veins (gen-veins 100 {:auxins [] :veins {[(+ 300 (rand-int 200)) (+ 300 (rand-int 200))] nil}})) 
+                 pal (shuffle (palette-fn))
+                 bg (pal 0)
+                 fg1 (pal 1)
+                 fg2 (pal 2)]
+             (apply q/background bg)
+             ;(q/no-stroke)
+             ;(apply q/fill bg)
+             ;(q/rect 30 30 745 745)
+             ;(apply q/stroke fg1)
+             ;(doseq [x (range 800) y (range 800)] (when (< (rand) 0.005) (q/set-pixel x y (q/color 0 0 0))))
+             (doseq [e veins]
+               (let [[orig dest] e]       ;i (range (count veins))]
+                 ;(q/stroke-weight 2))))) 
+                 ;(q/line (key e) (val e))))))
+                 ;(q/line (key (nth veins i)) (val (nth veins i)))))))
+                 (when (and (< (rand) 0.2) dest) (q/line orig dest)) 
+                 (if (< (rand) 0.1) (apply q/stroke fg2) (apply q/stroke fg1))
+                 (when (< (rand) 0.6) 
+                   (when (< (rand) 0.15) (apply q/fill fg2))
+                   (q/ellipse (orig 0) (orig 1) 22 22) 
+                   (q/no-fill))
+                 (if (< (rand) 0.1) (apply q/stroke fg2) (apply q/stroke fg1))
+                 (when (< (rand) 0.5) (q/ellipse (orig 0) (orig 1) 18 18)) 
+                 (if (< (rand) 0.1) (apply q/stroke fg2) (apply q/stroke fg1))
+                 (when (< (rand) 0.5) (q/ellipse (orig 0) (orig 1) 12 12)) 
+                 (if (< (rand) 0.1) (apply q/stroke fg2) (apply q/stroke fg1))
+                 (when (< (rand) 0.7) (q/ellipse (orig 0) (orig 1) 6 6)))))) 
+  :draw #(draw-param 50 25 (palette-fn) 0.1 0.5 24 0.2 0.7 0.5 0.3 0.6))
   ;:middleware [m/fun-mode]
   ;:draw draw-changing
   ;:update update-widths
@@ -351,39 +317,66 @@
 
 (comment 
   (quil.applet/with-applet dev.venation/skveins
-    (q/save "out/veins/fav_001.png")))
+    (q/save "out/veins/fav_002.png")))
    
+(defn draw-param
+  [R-exclusion step-length palette stem-rate alt-color-rate base-size fill-rate b0-rate b1-rate b2-rate b3-rate] 
+  (q/no-fill)  
+  (q/ellipse-mode :radius)
+  (q/color-mode :rgb 255 255 255 1)
+  (let [par-fn (partial step-grow R-exclusion step-length 5)
+        gen-veins (fn [iters state]
+                    (loop [iter 1 state state]
+                      (if (< iter iters) (recur (inc iter) (par-fn state)) state)))
+        veins
+        (:veins
+          (gen-veins 100 
+                     {:auxins {} 
+                      :veins {[(+ 200 (rand-int 400)) (+ 200 (rand-int 400))] nil}})) 
+        pal (shuffle palette)
+        bg (pal 0)
+        fg1 (pal 1)
+        fg2 (pal 2)]
+    (apply q/background bg)
+    (apply q/stroke fg1)
+    (doseq [e veins]
+      (let [[orig dest] e]       ;i (range (count veins))]
+        ;(q/stroke-weight 2))))) 
+        ;(q/line (key e) (val e))))))
+        ;(q/line (key (nth veins i)) (val (nth veins i)))))))
+        (when (and (< (rand) stem-rate) dest) (q/line orig dest)) 
+        (if (< (rand) alt-color-rate) (apply q/stroke fg2) (apply q/stroke fg1))
+        (when (< (rand) b0-rate) 
+          (when (< (rand) fill-rate) (apply q/fill fg2))
+          (q/ellipse (orig 0) (orig 1) base-size base-size) 
+          (q/no-fill))
+        (if (< (rand) alt-color-rate) (apply q/stroke fg2) (apply q/stroke fg1))
+        (when (< (rand) b1-rate) (q/ellipse (orig 0) (orig 1) (* 3 (/ base-size 4)) (* 3 (/ base-size 4)))) 
+        (if (< (rand) alt-color-rate) (apply q/stroke fg2) (apply q/stroke fg1))
+        (when (< (rand) b2-rate) (q/ellipse (orig 0) (orig 1) (* 2 (/ base-size 4)) (* 2 (/ base-size 4)))) 
+        (if (< (rand) alt-color-rate) (apply q/stroke fg2) (apply q/stroke fg1))
+        (when (< (rand) b3-rate) (q/ellipse (orig 0) (orig 1) (* 1 (/ base-size 4)) (* 1 (/ base-size 4)))))))) 
+ 
+(defn multi-draw []
+  (dotimes [i 500]
+    (let [r-exclusion (+ 10 (rand-int 50))
+          step-length (+ (/ r-exclusion 2) (- (rand-int 40) 20))
+          pal (palette-fn) stem-rate (rand) 
+          alt-color-rate (rand) base-size (- (/ step-length 2) 1)
+          fill-rate (rand) b0-rate (rand) b1-rate (rand) b2-rate (rand) 
+          b3-rate (rand)]
+      (try 
+        (draw-param r-exclusion step-length pal stem-rate alt-color-rate
+                    base-size fill-rate b0-rate b1-rate b2-rate b3-rate)
+        (let [fname (str "out/veins/2/veins_" (format "%05d" i) ".png")]
+          (q/save fname))
+        (catch Throwable t 
+          (println "Error: " t))))))
+ 
+(declare gen-variations)
+(q/defsketch gen-variations 
+  :settings #(q/smooth 16)
+  :setup (fn [] (q/no-loop) (q/hint :disable-async-saveframe))
+  :size [800 800]
+  :draw multi-draw) 
 
-(defn draw [R-exclusion step-lenght palette stem-rate] 
-    (q/no-fill)  
-    (q/color-mode :rgb 255 255 255 1)
-    (let [veins (:veins (gen-veins 100 {:auxins {} :veins {[400 400] nil}})) 
-          pal (shuffle (palette-fn))
-          bg (pal 0)
-          fg1 (pal 1)
-          fg2 (pal 2)]
-      (apply q/background bg)
-      (apply q/stroke fg1)
-      (doseq [e veins]
-        (let [[orig dest] e]       ;i (range (count veins))]
-          ;(q/stroke-weight 2))))) 
-          ;(q/line (key e) (val e))))))
-          ;(q/line (key (nth veins i)) (val (nth veins i)))))))
-          (when (and (< (rand) 0.1) dest) (q/line orig dest)) 
-          (if (< (rand) stem-rate) (apply q/stroke fg2) (apply q/stroke fg1))
-          (when (< (rand) 0.6) 
-            (when (< (rand) 0.3) (apply q/fill fg2))
-            (q/ellipse (orig 0) (orig 1) 22 22) 
-            (q/no-fill))
-          (if (< (rand) 0.1) (apply q/stroke fg2) (apply q/stroke fg1))
-          (when (< (rand) 0.5) (q/ellipse (orig 0) (orig 1) 18 18)) 
-          (if (< (rand) 0.1) (apply q/stroke fg2) (apply q/stroke fg1))
-          (when (< (rand) 0.5) (q/ellipse (orig 0) (orig 1) 12 12)) 
-          (if (< (rand) 0.1) (apply q/stroke fg2) (apply q/stroke fg1))
-          (when (< (rand) 0.7) (q/ellipse (orig 0) (orig 1) 6 6)))))) 
- 
-  
- 
- 
-(letfn [(foo [x] (inc x))]
-  (foo 3))
