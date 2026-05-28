@@ -21,11 +21,11 @@
       (do
         (q/push-matrix)
         (if sym? (q/rotate (/ q/PI 6))    ;symetrical
-         (q/rotate (+ (/ q/PI 2.5) (* 0.25 (rand) (q/random-gaussian))))) ;titrate
+         (q/rotate (+ (/ q/PI 2.5) (* 0.55 (rand) (q/random-gaussian))))) ;titrate
         (branch (max (* stroke-weight 0.618) 1) (* len 0.66) sym?) ;OG 0.67
         (q/pop-matrix)
         (q/push-matrix)
-        (q/rotate (+ (/ q/PI 6 -1) (* 0.25 (rand) (q/random-gaussian))))    ;symetrical
+        (q/rotate (+ (/ q/PI 6 -1) (* 0.55 (rand) (q/random-gaussian))))    ;symetrical
         (branch (max (* stroke-weight 0.618) 1) (* len 0.66) sym?)
         (q/pop-matrix))
       (when (> (rand) 0.5)
