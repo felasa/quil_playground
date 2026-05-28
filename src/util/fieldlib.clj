@@ -8,6 +8,7 @@
    (fn [[x y]] (vector (+ (* x scale) (/ (q/width) 4)) (+ (* y scale) (/ (q/height) 4)))))
   ([W H scale]
    (fn [[x y]] (vector (+ (* x scale) (/ W 4)) (+ (* y scale) (/ H 4))))))
+
 (defn grid-transform
   "Reduces resolution of xy plane into fraction 'pixels'"
   ([fraction]

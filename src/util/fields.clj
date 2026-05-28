@@ -24,7 +24,7 @@
     (mapv #(/ % N) v)))
 
 (defn perlin-field
-  "Returns a vector at x, y given by the angle produced by noise at x,y and scale"
+  "Returns a fn that returns vector at x, y given by the angle produced by noise at x,y and scale"
   [scale]
   (fn [x y]
     (let [angle (* 2 math/PI ((perlin-noise scale) x y))

@@ -1,6 +1,38 @@
 (ns util.transform
   (:require [quil.core :as q]
-            [util.random :as random :refer [draw-binormal]]))
+            [util.random :as random :refer [draw-binormal]]
+            [util.core :as uc]))
+
+(defn rotate-polygon
+  "Rotates a polygon clockwise about its centroid.  The theta argument determines
+   how the polygon is rotated.  `points` is a sequence of [x y] pairs that
+   define the polygon"
+  ([centroid angle points] 
+   (if (zero? theta)
+     points
+     (let [[x-centroid y-centroid] centroid 
+           points (map vector xs ys)]
+       (map (fn [[x y]]
+              (let [current-angle (angle x-centroid y-centroid x y)
+                    new-angle (+ current-angle angle)
+                    hypot (uc/dist [x y] [x-centroid y-centroid])
+                    x-offset (* hypot (Math/cos new-angle))
+                    y-offset (* hypot (Math/sin new-angle))]
+                [(+ x-offset x-centroid) (+ y-offset y-centroid)])
+              points)))))
+  ([angle points]
+   (if (zero? theta)
+     points
+     (let [xs (map first points)
+           ys (map second points)
+           min-x (apply min xs)
+           max-x (apply max xs)
+           min-y (apply min ys)
+           max-y (apply max ys)
+           x-centroid (/ (+ min-x max-x) 2.0)
+           y-centroid (/ (+ min-y max-y) 2.0)
+           points (map vector xs ys)]
+       (rotate-polygon [x-centroid y-centroid] angle points)))))
 
 (defn scale-v
   [scale v]
