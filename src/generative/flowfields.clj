@@ -5,9 +5,11 @@
             ; [perlin-noise perlin-field curl-field grid-field]]))
 
 ;; TODO: 
+;; - FIX. it's broken now.
 ;; - CLEANUP it's a mess rn
 ;; - Really need to cleanup
 ;; - fn to handle next curve position (avoid collisions/spacing)
+;;   could use polyoverlap fn?
 ;; - draw circle instead of line segment [done]
 ;; - color handling
 ;; - funs that return data for drawing. 
