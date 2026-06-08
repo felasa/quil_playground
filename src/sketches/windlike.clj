@@ -39,7 +39,7 @@
   :title "Wind"
   :settings #(q/smooth 8)
   :setup (fn [] (q/frame-rate 24) (q/noise-detail 8 0.5)
-                ;todo: move defs to q/state
+                ;TODO: move defs to q/state
                 (def id (subs (str (random-uuid)) 0 8))
                 (def seeds [(System/currentTimeMillis) (System/currentTimeMillis)])
                 (def pal (->> combos

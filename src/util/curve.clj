@@ -1,18 +1,5 @@
 (ns util.curve
-  (:require [util.fields :as fields]
-            [clojure.math :as math]
-            [quil.core :as q]))
-
-(defn field-curve
-  [field-fn segmen-len n-segments start-p]
-  (loop [segments 1
-         [x y :as p] start-p
-         return [[x y]]]
-    (if (<= segments n-segments)
-      (let [[dx dy :as delta] (field-fn x y)
-            [x' y'] (mapv + p (map #(* segmen-len %) delta))]
-        (recur (inc segments) [x' y'] (conj return [x' y'])))
-      return)))
+    (:require [quil.core :as q]))
 
 (defn draw-curve
   [pts] 

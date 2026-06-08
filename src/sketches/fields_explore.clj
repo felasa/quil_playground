@@ -60,6 +60,6 @@
   ;:dra #(test-field 0.003)
   ;:dra #(check-field 0.005 10))
 
-
-(quil.applet/with-applet sketch.fields-explore/sketch 
-  (q/save (str "out/cfield-experiment/" (subs (str (random-uuid)) 0 5) ".png"))) ;
+(comment
+  (quil.applet/with-applet sketch.fields-explore/sketch 
+    (q/save (str "out/cfield-experiment/" (subs (str (random-uuid)) 0 5) ".png")))) ;

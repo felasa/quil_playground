@@ -1,7 +1,7 @@
-(ns roulettes.cylocycloid
+(ns sketches.cylocycloid
   (:require [quil.core :as q]
-            [quil.applet]
-            [clojure.math :as math])) 
+          [quil.applet]
+          [clojure.math :as math])) 
 
 (defn cyclocycloid [R r d t]
   (let [Rr (+ R r) qr (/ Rr r)]

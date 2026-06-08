@@ -1,3 +1,4 @@
+;; TODO: Need to fix. draw curve with field lost in refactor
 (ns sketches.sinkflow
   (:require [quil.core :as q :include-macros true]
             [generative.flowfields :refer [draw-curve-with-field]]

@@ -3,12 +3,12 @@
   "Tries to implement https://www.tylerxhobbs.com/words/a-guide-to-simulating-watercolor-paint-with-generative-art"
   (:require [quil.applet]
             [quil.core :as q]
-            [shapes.polygons :as poly]
-            [shapes.blobs :refer [blob]]
+            [util.shapes :as poly]
+            [util.shapes :refer [blob]]
             [util.transform :as util]
             [util.masking :refer [mask-w-alpha]]
             [util.random :refer [gauss]]
-            [util.color :refer [hex-to-rgb]]))
+            [util.core :refer [hex-to-rgb]]))
 
 (defn setup []
   (q/no-loop)
@@ -248,8 +248,8 @@
                     color (rand-nth (vals (select-keys pal-bd [:pink0 :pink1 :pink2])))]
                 (textured-shape 30 color
                                 #(do
-                                   (->> (shapes.polygons/hourglass 10 20 3)
-                                        (shapes.polygons/close-path)
+                                   (->> (poly/hourglass 10 20 3)
+                                        (poly/close-path)
                                         (util.transform/transform-points 1 [x y])
                                         (util.transform/mutate-path 4 0.6 [2 1 1])
                                         (draw-shape))))))))

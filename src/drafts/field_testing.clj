@@ -70,28 +70,29 @@
 ;;  (5.026548385620117 5.497787296772003))
 
 (partition 2 (range 0 1 0.1))
-(q/defsketch rays
-  :size [800 800]
-  :setup (fn [] (q/no-loop))
-  :draw  (fn []
-           (q/background 0)
-           (q/stroke 156 40 78)
-           (q/stroke-weight 2)
-           (dotimes [_ 900]
-             (let [points ((field-path curl-field 0.0035 30 5) [(rand-int (q/width)) (rand-int (q/height))])]
-              (doseq [[p0 p1] points] (q/line p0 p1))))
-           (let [intervals (partition 2 (map #(* % q/PI) (map #(+ % 1) (range 0 2 0.2))))]
-             (doseq [x (range (q/width)) y (range (q/height))]
-                ;;(when (< (rand) (* 0.e (/ y (q/width)))) (q/set-pixel x y 255)) 
-              (let [pxl (q/get-pixel x y)
-                    [dx dy] (mapv - [(/ (q/width) 2) (q/height)] [x y])
-                    angle (+ q/PI (q/atan2 dy dx))]
-                (when (some #(apply between? angle %) intervals)
-                  (q/set-pixel x y (bit-xor 0xFFFFFF pxl))
-                  (when (< (rand) (* 0.8 (/ (q/sqrt (- (q/width) y)) (q/width)))) (q/set-pixel x y (q/color 255))))))) 
-           (q/no-stroke)
-           (q/color-mode :hsb 359 100 100 1.0) (q/fill 40 100 100)
-           (q/ellipse (/ (q/width) 2) (q/height) 200 200)))
+(defn sketch []
+  (q/defsketch rays
+   :size [800 800]
+   :setup (fn [] (q/no-loop))
+   :draw  (fn []
+            (q/background 0)
+            (q/stroke 156 40 78)
+            (q/stroke-weight 2)
+            (dotimes [_ 900]
+              (let [points ((field-path curl-field 0.0035 30 5) [(rand-int (q/width)) (rand-int (q/height))])]
+               (doseq [[p0 p1] points] (q/line p0 p1))))
+            (let [intervals (partition 2 (map #(* % q/PI) (map #(+ % 1) (range 0 2 0.2))))]
+              (doseq [x (range (q/width)) y (range (q/height))]
+                 ;;(when (< (rand) (* 0.e (/ y (q/width)))) (q/set-pixel x y 255)) 
+               (let [pxl (q/get-pixel x y)
+                     [dx dy] (mapv - [(/ (q/width) 2) (q/height)] [x y])
+                     angle (+ q/PI (q/atan2 dy dx))]
+                 (when (some #(apply between? angle %) intervals)
+                   (q/set-pixel x y (bit-xor 0xFFFFFF pxl))
+                   (when (< (rand) (* 0.8 (/ (q/sqrt (- (q/width) y)) (q/width)))) (q/set-pixel x y (q/color 255))))))) 
+            (q/no-stroke)
+            (q/color-mode :hsb 359 100 100 1.0) (q/fill 40 100 100)
+            (q/ellipse (/ (q/width) 2) (q/height) 200 200))))
 
 (qapp/with-applet sketch 
   (q/noise-seed (rand))

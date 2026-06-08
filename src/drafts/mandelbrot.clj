@@ -59,5 +59,6 @@
   :draw #(draw-julia 200 20 [-0.5125 -0.5213])
   :drawa #(draw-mandel 1000 100))
 
-(quil.applet/with-applet fractal
-  (transform-coord [800 800]))
+(comment
+  (quil.applet/with-applet fractal
+    (transform-coord [800 800])))

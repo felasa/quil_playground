@@ -163,27 +163,27 @@
            (q/color-mode :hsb 359 100 100 1.0)
            (q/background 50))
   :renderer :java2d        
-  :draw draw-fn
-  :drawa #(do 
-            (q/color-mode :hsb 359 100 100 1.0)
-            ;(blb/draw-blob 600 5 30 [305 55 39 0.1] [400 400])
-            (dotimes [theta 20] 
-              (let [R 90 angle (* theta  (/ q/TWO-PI 20))
-                    dx (* R (q/cos angle)) 
-                    dy (* R (q/sin angle))
-                    position (mapv + [dx dy] [400 400])
-                    branches (branch 
-                              {:direction (+ angle (* 0 (q/random-gaussian)))
-                               :position (mapv + position [(* 5 (q/random-gaussian)) (* 5 (q/random-gaussian))])
-                               :lenght 100 :end? false 
-                               :width 10 :generation 1})]
-               (draw-branch branches)))
-            (doseq [x (range 800) y (range 800)]
-              (when (< (rand) 0.2) (q/set-pixel x y (q/color 0 0 0))))))
+  :drawa draw-fn
+  :draw #(do 
+           (q/color-mode :hsb 359 100 100 1.0)
+           ;(blb/draw-blob 600 5 30 [305 55 39 0.1] [400 400])
+           (dotimes [theta 20] 
+             (let [R 90 angle (* theta  (/ q/TWO-PI 20))
+                   dx (* R (q/cos angle)) 
+                   dy (* R (q/sin angle))
+                   position (mapv + [dx dy] [400 400])
+                   branches (branch 
+                             {:direction (+ angle (* 0 (q/random-gaussian)))
+                              :position (mapv + position [(* 5 (q/random-gaussian)) (* 5 (q/random-gaussian))])
+                              :lenght 100 :end? false 
+                              :width 10 :generation 1})]
+              (draw-branch branches)))
+           (doseq [x (range 800) y (range 800)]
+             (when (< (rand) 0.2) (q/set-pixel x y (q/color 0 0 0))))))
            ;(blb/draw-blob 100 4 40 [0 0 100 0.05] [400 400])))
   
            
   ;:dra #(test-field 0.003)
   ;:dra #(check-field 0.005 10))
-(quil.applet/with-applet sketch.lqdyq/sketch 
-  (branch ex-conds))
+(comment (quil.applet/with-applet sketch.lqdyq/sketch 
+           (branch ex-conds)))

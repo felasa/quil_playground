@@ -1,4 +1,4 @@
-(ns generative.flowfields
+(ns drafts.flowfields
   (:require [quil.core :as q]
             [clojure.data.json :as json]
             [util.fields :as fields])) 

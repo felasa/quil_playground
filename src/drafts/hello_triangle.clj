@@ -3,13 +3,6 @@
             [quil.core :as q]
             [shapes.polygons :as poly]))
 
-(comment 
-  (partition 2 (poly/n-gon 3))
-  (math/cos (/ math/PI 3)) ;; 0.5000000000000001
-  (math/sin (/ math/PI 3)) ;; 0.8660254037844386
-  (math/cos (* 2 (/ math/PI 3))) ;; 2.0943951023931953
-  (math/sin (* 2 (/ math/PI 3)))) ;; 0.8660254037844387
-  
 ;y =  (* 500/866 x) + 100
 (defn draw [step] 
   (loop [iter 1 x-ini 100 y-ini 100]
@@ -54,6 +47,7 @@
 
 (defn hello []
   (q/color-mode :rgb 1.0 1.0 1.0 1.0)
+  (q/background 0)
   (q/push-matrix)
   (q/rotate q/PI)
   (let [[p1 p2 p3 :as T] (map vec (map #(map + [400 400] %) (poly/n-gon 300 3)))]
@@ -69,9 +63,9 @@
             (q/set-pixel x y (apply q/color ws))))))
   (q/pop-matrix))
 
-(defn hello []
-  (q/sketch
-    :setup (fn []  (q/no-loop))
-    :size [800 800]
-    :draw hello))
+(declare sketch)
+(q/defsketch sketch
+  :setup (fn []  (q/no-loop))
+  :size [800 800]
+  :draw hello)
 

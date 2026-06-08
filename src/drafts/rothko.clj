@@ -58,4 +58,3 @@
   :setup (fn [] (q/no-loop))
   :size [400 800]
   :draw draw)
-

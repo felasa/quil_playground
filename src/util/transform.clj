@@ -3,14 +3,16 @@
             [util.random :as random :refer [draw-binormal]]
             [util.core :as uc]))
 
+;; TODO: could use a revision
 (defn rotate-polygon
   "Rotates a polygon clockwise about its centroid.  The theta argument determines
    how the polygon is rotated.  `points` is a sequence of [x y] pairs that
    define the polygon"
   ([centroid angle points] 
-   (if (zero? theta)
+   (if (zero? angle)
      points
-     (let [[x-centroid y-centroid] centroid 
+     (let [xs (mapv #(get % 0) points) ys (mapv #(get % 1) points)
+           [x-centroid y-centroid] centroid 
            points (map vector xs ys)]
        (map (fn [[x y]]
               (let [current-angle (angle x-centroid y-centroid x y)
@@ -21,7 +23,7 @@
                 [(+ x-offset x-centroid) (+ y-offset y-centroid)])
               points)))))
   ([angle points]
-   (if (zero? theta)
+   (if (zero? angle)
      points
      (let [xs (map first points)
            ys (map second points)
@@ -34,32 +36,27 @@
            points (map vector xs ys)]
        (rotate-polygon [x-centroid y-centroid] angle points)))))
 
-(defn scale-v
-  [scale v]
-  (map #(* scale %) v))
-
 (defn transform-points
+  "Scales a set of points relative to center"
   [scale center pts]
   (->> pts 
+       (map (fn [v] (map - center v)))
        (map (fn [v] (map #(* scale %) v)))
        (map (fn [v] (map + center v)))))
 
-(comment (transform-points 100 [50 50] [[0 0] [1 1] [0 1] [1 0]]))
 (defn mutate-segment 
   ([std p1 p2]
-   (let [[x1 y1] p1 [x2 y2] p2
-         [xm ym] (map #(/ % 2.0) (mapv + p1 p2))]
+   (let [[xm ym] (map #(/ % 2.0) (mapv + p1 p2))]
      (vector 
        p1 
        (vector (+ xm (* std (q/random-gaussian)))
                (+ ym (* std (q/random-gaussian))))
        p2)))
-  ([p1 p2] (mutate-segment p1 p2)))
+  ([p1 p2] (mutate-segment 1 p1 p2)))
 
 (defn mutate-segment-with-fn
   ([mutate-fn factor p1 p2]
-   (let [[x1 y1] p1 [x2 y2] p2
-         [xm ym] (map #(/ % 2.0) (mapv + p1 p2))]
+   (let [[xm ym] (map #(/ % 2.0) (mapv + p1 p2))]
      (vector 
        p1 
        (mapv + [xm ym] (map #(* factor %) (mutate-fn xm ym)))
@@ -198,14 +195,10 @@
   [draw-fn params]
   (let [{:keys [dx dy angle scale]} params]
     (q/push-matrix)
-    (when dx
-      (q/translate  dx 0))
-    (when dy
-      (q/translate 0 dy))
-    (when angle
-      (q/rotate  angle))
-    (when scale
-      (q/scale  scale))  
+    (when scale (q/scale  scale))  
+    (when dx    (q/translate dx 0))
+    (when dy    (q/translate 0 dy))
+    (when angle (q/rotate angle))
     (draw-fn)
     (q/pop-matrix)))
 
