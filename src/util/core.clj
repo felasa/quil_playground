@@ -164,9 +164,9 @@
 (defn w 
   "Returns width or width times p. taken from genartlib"
   ([] (q/width))
-  ([p] (* (w) p)))
+  ([p] (/ (w) p)))
 
 (defn h 
   "Returns height or height times p. taken from genartlib"
   ([] (q/height))
-  ([p] (* (h) p)))
+  ([p] (/ (h) p)))
